@@ -28,8 +28,8 @@
   },
   "mark": {
     "type": "line",
-    "color": "#f4134d",
-    "strokeWidth": "5"
+    "color": "#FFFF00",
+    "strokeWidth": "2"
   },
   "encoding": {
     "x": {
