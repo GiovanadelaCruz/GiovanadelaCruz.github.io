@@ -74,6 +74,35 @@
             </div>
         </div>
     </section>
+
+    <!--- Menu Toggle -->
+    
+    <script>    
+        let menuLinks = document.getElementById("menuLinks");
+        function openMenu() {
+            menuLinks.style.right = "0px";
+        }
+        function closeMenu() {
+            menuLinks.style.right = "-200px";
+        }
+    </script>
+    
+    <!--- Scroll Progress Bar -->
+    
+    <script>
+    window.addEventListener("scroll", function() { updateProgressBar(); });
+    
+    function updateProgressBar() {    
+      let scrollTop = window.scrollY;
+      let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let progress = (scrollTop / scrollHeight) * 100;
+      let progressBar = document.getElementById("progressBar");
+      if (progressBar) {
+          progressBar.style.width = progress + "%";
+      }
+    }
+    
+    </script>
     
 </body>
 
