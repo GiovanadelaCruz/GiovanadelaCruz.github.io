@@ -10,9 +10,8 @@
     <!-- Setting some aspects of the website-->
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     
-    
-
     <!-- This is a link to the vega-lite which we're using to make graphs -->
     <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
@@ -26,8 +25,40 @@
     </style>
 </head>
 
-<body> 
-<!-- The body tag contains the elements that visitors to our page will see. -->
+<body>
+
+    <!-- Progress Indicator for Page Scroll -->
+    <div class="page-header">
+        <div class="scroll-tracker">
+            <div class="scroll-indicator" id="scrollBar"></div>
+        </div>
+    </div>
+    
+    <!-- Main Menu Structure -->
+    <section class="main-navigation">
+        <nav>
+            <div class="menu-container" id="menuLinks">
+                <i class="fa fa-close" onclick="closeNav()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="https://github.com/GiovanadelaCruz/GiovanadelaCruz.github.io">GITHUB</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-navicon" onclick="openNav()"></i>
+        </nav>
+
+        <!-- Section Content -->
+        <div class="welcome-container">
+            <h1>Maria Giovana de la Cruz</h1>
+            <p>Candidate Number: 39052 | Automated Data Visualization Course, 2024</p>
+            <a href="#about" class="explore-btn">Discover More</a>
+        </div>        
+    </section>
+
+    <!--- Summary of Parts of the Coursework and additional Links to those pages -->
+    
     <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
         <!-- This is a header, it is the largest text on the page -->
         Giovana de la Cruz
