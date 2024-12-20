@@ -36,6 +36,72 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+.menu-container ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px; 
+    position: relative;
+}
+
+.menu-container ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.menu-container ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #FCA311;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.menu-container ul li:hover::after{
+    width: 100%;
+}
+
+.welcome-container{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.welcome-container h1{
+    font-size: 62px;
+}
+
+.welcome-container p{
+    margin: 10px 0px 40px; 
+    font-size: 14px;
+    color: #fff;
+}
+
+.explore-link{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    border: 1px solid #fff;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.explore-link:hover{
+    border:1px solid #FCA311;
+    background: #FCA311;
+    transition: 1s;
+}
+
 /* We want the headings to be a little bigger than the paragraph text */
 .big { /* This is the class we created in the HTML file, you can use it to style any element */
   font-size: 2.5em;
