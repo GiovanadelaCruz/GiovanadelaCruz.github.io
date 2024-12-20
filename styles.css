@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-navigation {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(#eeece2B3, #eeece2B3), url(lse_background.jpeg);
+    background-image: linear-gradient(#eeece2B3, #eeece2B3), url(lse_background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
