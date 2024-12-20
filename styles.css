@@ -13,6 +13,15 @@ body {
   /*padding-top: 60px;*/
 }
 
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* Class: header1 */
 .header1 {
     min-height: 100vh;
     width: 100%;
@@ -20,14 +29,6 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: #333;
-  margin-top: 24px;
-  margin-bottom: 16px;
-  font-weight: 600;
 }
 
 /* We want the headings to be a little bigger than the paragraph text */
