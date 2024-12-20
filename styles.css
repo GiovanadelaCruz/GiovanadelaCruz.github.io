@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Class: header1 */
-.header1 {
+.main-navigation {
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(85, 100, 161, 0.7),rgba(85, 100, 161, 0.7)),url(lse_background.jpeg);
