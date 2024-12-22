@@ -1,20 +1,139 @@
+<!--PORTFOLIO PAGE-->
+
+<!DOCTYPE html>
 <html>
 
-<body>
+<head>
+    <title>Homepage</title>
+
+    <!-- Setting some aspects of the website-->
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <h1 class="big" style="margin-bottom: 0px;"> <!-- We have added a class to the header called "big" which we can use to style it in the CSS -->
-        <!-- This is a header, it is the largest text on the page -->
-        Giovana de la Cruz
-    </h1>
-    <p style="margin-top: 0px; color: rgb(0, 113, 139)">
-        <!-- we're setting the margin to 0px so the header and authour name are close together -->
-        MPA in Data Science for Public Policy - LSE <br>
-        <a href="https://www.linkedin.com/in/giovana-de-la-cruz">LinkedIn</a> | <a
-            href="https://github.com/GiovanadelaCruz">GitHub</a>
-    </p>
-    <h3 class="small"> <!-- We have added a class to the header called "small" which we can use to style it in the CSS -->
-        This page acts as your portfolio of charts. You can use it as a good starting point to display your work but make sure to customise it to make it your own, or even start from scratch.  
-    </h3>
+    <!--Vega-->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+    
+    <!-- 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    -->
+</head>
+    
+<body>
+
+    <!-- Main Menu Structure -->
+    <section class="main-navigation-1">
+        <nav>
+            <div class="menu-container" id="menuLinks">
+                <i class="fa fa-close" onclick="closeNav()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="project.html">PROJECT</a></li>
+                    <li><a href="https://github.com/GiovanadelaCruz/GiovanadelaCruz.github.io">GITHUB</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-navicon" onclick="openNav()"></i>
+        </nav>    
+
+        <!-- Title Content -->
+        <div class="welcome-container">
+            <h1>Portfolio</h1>
+        </div>
+    </section>
+
+    <!-- WEEK 1 -->
+    <section class="sections">        
+        <h1>Task 1</h1>
+        <h3>Hosting. Display charts in your own site</h3>
+        <p>Two charts from the library by Richard Davies.</p>
+        <div class="grid">
+            
+            <!-- Chart 1 -->            
+            <div class="card-content">
+                <figure id="Portfolio_1_1"></figure>
+            </div>
+            
+            <!-- Chart 2 -->            
+            <div class="card-content">
+                <figure id="Portfolio_1_2"></figure>
+            </div>            
+        </div>
+    </section>
+    
+    <hr>
+
+    <!-- WEEK 2 -->
+    <section class="sections">   
+        <h1>Task 2</h1>
+        <h3>Building. Create your own visualisations</h3>
+        <p>Two charts were created using the Economics Observatory Data Hub.</p>
+        <div class="grid">
+            
+            <!-- Chart 3 -->            
+            <div class="card-content">
+                <figure id="Portfolio_2_1"></figure>
+            </div>
+
+            <!-- Chart 4 -->            
+            <div class="card-content">
+                <figure id="Portfolio_2_2"></figure>
+            </div>            
+        </div>        
+    </section>
+    
+    <hr>
+
+    <!-- WEEK 3 -->
+    <section class="sections">   
+        <h1>Task 3</h1>
+        <h3>Debating. Use a visualisation in economic/policy commentary</h3>
+        <p>DESCRIPTION...</p>
+        <div class="grid">
+            
+            <!-- Chart 1 -->            
+            <div class="card-content">
+                <figure id="Portfolio_3_1"></figure>
+            </div>
+
+            <!-- Chart 2 -->            
+            <div class="card-content">
+                <figure id="Portfolio_3_2"></figure>
+            </div>            
+        </div>        
+    </section>
+
+    <hr>
+
+    <!-- WEEK 4 -->
+    <section class="sections">   
+        <h1>Task 4</h1>
+        <h3>Replication. Re-create, then improve, someone else’s chart</h3>
+        <p>DESCRIPTION...</p>
+        <div class="grid">
+            
+            <!-- Chart 1 -->            
+            <div class="card-content">
+                <figure id="Portfolio_4_1"></figure>
+            </div>
+
+            <!-- Chart 2 -->            
+            <div class="card-content">
+                <figure id="Portfolio_4_2"></figure>
+            </div>            
+        </div>        
+    </section>
+    
+    
+
 
     <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
     <section>
@@ -27,72 +146,26 @@
         <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
     </section>
 
-    <section>
-        <div class="chart-description">
-            <h2>Section 2: Inflation chart</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                [Description].
-            </p>
-        </div>
-        <figure id="Location2"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
-
-    <section>
-        <div class="chart-description">
-            <h2>Section 3: Electricity in Canada</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                [Description].
-            </p>
-        </div>
-        <figure id="Location3"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section> 
-
-    <section>
-        <div class="chart-description">
-            <h2>Section 4: Inflation in Canada</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                [Description].
-            </p>
-        </div>
-        <figure id="Location4"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section>     
-
-    <section>
-        <div class="chart-description">
-            <h2>Section 5: New Chart</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                Chart using Python.
-            </p>
-        </div>
-        <figure id="Location5"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section>     
-    <!-- Do you want to add more sections? -->
-        <!-- Try copying pasting the section above -->
-        <!-- You'll need to change the id of the figure "<figure id="Location3"... -->
-        <!-- ... and add a new variable for the graph spec in the script at the bottom of the page -->
-
-
-    <!-- This is a script, it's a way to run JavaScript code on the page -->
+    <!-- A script to run JavaScript code on the page -->
     <script>
         // This is a comment in JavaScript - it's a different language to HTML and CSS
-
         // Example: let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
-        let figure_1_spec = "w1_chart1.json"
-        let figure_2_spec = "w1_chart2.json"
-        let figure_3_spec = "w2_chart1.json"
-        let figure_4_spec = "w2_chart2.json"
-        let figure_5_spec = "goods_services.json"
-                                                                                                              // You should have a spec for a graph in this same folder. Just specify its name here, e.g. let figure_1_spec = "chart1.json"
-
-        // Example: vegaEmbed('#Location1', figure_1_spec) // We're using the vegaEmbed function to put a graph in the element with id figure_1
-        vegaEmbed('#Location1', figure_1_spec)
-        vegaEmbed('#Location2', figure_2_spec)
-        vegaEmbed('#Location3', figure_3_spec)
-        vegaEmbed('#Location4', figure_4_spec)
-        vegaEmbed('#Location5', figure_5_spec)
         
+        let fig_port_w1_1 = "w1_chart1.json"
+        let fig_port_w1_2 = "w1_chart2.json"
+        let fig_port_w2_1 = "w2_chart1.json"
+        let fig_port_w2_2 = "w2_chart2.json"
+        let fig_port_w3_1 = "w3_chart1.json"
+        let fig_port_w3_2 = "w3_chart2.json"
+        let figure_5_spec = "goods_services.json"
 
-
+        vegaEmbed('#Portfolio_1_1', fig_port_w1_1)
+        vegaEmbed('#Portfolio_1_2', fig_port_w1_2)
+        vegaEmbed('#Portfolio_2_1', fig_port_w2_1)
+        vegaEmbed('#Portfolio_2_2', fig_port_w2_2)
+        vegaEmbed('#Portfolio_3_1', fig_port_w3_1)
+        vegaEmbed('#Portfolio_3_2', fig_port_w3_2)
+        
     </script>
 
 </body>

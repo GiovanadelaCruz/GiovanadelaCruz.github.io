@@ -1,39 +1,27 @@
 /* These are comments in CSS. */
 
-/* Body */
-body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-  /* we want a white page, that's centered and not too wide */
-  /*background-color: #fff;*/
-  margin:0 auto;
-  /*max-width: 800px;*/
-  /*padding-top: 60px;*/
-}
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  color: #333;
-  margin-top: 24px;
-  margin-bottom: 16px;
-  font-weight: 600;
-}
-
-/* Class: header1 */
-.main-navigation {
+/* Class: main-navigation */
+.main-navigation-0 {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(#eeece2B3, #eeece2B3), url(lse_background.jpg);
+    background-image: linear-gradient(#918443b3,#918443b3), url(lse_background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
 }
+.main-navigation-1 {
+  min-height: 50vh; 
+  width: 100%;
+  background-image: linear-gradient(#918443b3,#918443b3), url(lse_background.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
 
+/* Class: nav */
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 0% 0%; /*before 2 y 6*/
     justify-content: space-between;
     align-items: center;
 }
@@ -41,6 +29,7 @@ nav .fa{
     display: none;
 }
 
+/* Class: menu-container */
 .menu-container{
     flex:1;
     text-align: center;
@@ -48,30 +37,31 @@ nav .fa{
 .menu-container ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px; 
+    padding: 15px 15px; 
     position: relative;
 }
 .menu-container ul li a{
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 14px;
 }
 .menu-container ul li::after{
     content: '';
     width: 0%;
-    height: 2px;
-    background: #FCA311;
+    height: 2.5px;
+    background: #e8d158;
     display: block;
     margin: auto;
-    transition: 0.5s;
+    transition: 0.45s;
 }
 .menu-container ul li:hover::after{
-    width: 100%;
+    width: 101%;
 }
 
+/* Class: welcome-container */
 .welcome-container{
-    width: 90%;
-    color: #fff;
+    width: 100%;
+    color: #fff; /*#f7eec1*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -79,38 +69,145 @@ nav .fa{
     text-align: center;
 }
 .welcome-container h1{
-    font-size: 62px;
+    font-size: 55px;
+    color: #fff;
 }
 .welcome-container p{
-    margin: 10px 0px 40px; 
-    font-size: 14px;
+    margin: 0px 0cap 30px;
+    font-size: 16px;
     color: #fff;
 }
 
+.welcome-container p a{
+  font-size: 16px;
+  color: #e8d158;
+  font-weight: bold;
+}
+
+/* Class: explore-link */
 .explore-link{
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    padding: 12px 34px;
-    font-size: 13px;
-    border: 1px solid #fff;
+    padding: 10px 50px;
+    font-size: 14px;
+    border: 0.5px solid #fff;
     background: transparent;
     position: relative;
-    cursor: pointer;
-
+    cursor: pointer; 
 }
 .explore-link:hover{
-    border:1px solid #FCA311;
-    background: #FCA311;
-    transition: 1s;
+    border:0.5px solid #a7902a;
+    background: #a7902a;
+    transition: 0.6s;
 }
 
+/* Class: overview-section */
+.overview-section{
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.overview-section h1{
+  font-size: 40px;
+}
 
+/* Class: card-content */
+.overview-section .card-content{
+  margin: auto;
+  width: 650px;
+  background: #e8d158;
+  border-radius: 35px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  padding: 5px 0px 20px;
+  /*box-sizing: border-box;*/
+  transition: 0s;
+  box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.30)
+}
+.overview-section .card-content h2{
+  font-size: 23px;
+}
 
+/* Class: card-content */
+.sections .card-content{
+  background: transparent;
+  margin-bottom: 10px;
+  margin-top:10px;
+}
+.sections .grid{
+  margin-top: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.sections{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+.sections h1, .sections h3 {
+  margin: 5px;
+}
+/* Body */
+body {
+  font-family: 'Open Sans', 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; /*'Poppins', 'Helvetica Neue'*/
+  font-size: 16px;
+  color: #333;
+  line-height: 1.2;
+  /*background-color: #fff;*/
+  margin:0 auto;
+  padding: 0;
+  /*max-width: 800px;*/
+  /*padding-top: 60px;*/
+}
 
-/* We want the headings to be a little bigger than the paragraph text */
-.big { /* This is the class we created in the HTML file, you can use it to style any element */
+/* Headings and paragraph */
+/*h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}*/
+h1{
+  color: #000;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-size: 35px;
+  font-weight: bold /*font-weight: 600;*/
+}
+h2{
+  color: #000;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+p{
+  color: #000;
+  font-size: 14px;
+  /*font-weight: 300;*/
+  line-height: 20px;
+  padding: 10px;
+
+}
+
+hr {
+  border: none;
+  height: 0.5px; 
+  background-color: #33333388;
+  width: 90%;           
+  margin: 20px auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*
+.big {
   font-size: 2.5em;
 }
 
@@ -122,18 +219,15 @@ h2 {
   font-size: 1.25em;
 }
 
-/* Paragraph */
 p {
   margin-bottom: 1em;
   font-weight: 300;
 }
 
 section {
-  margin-bottom: 2.5em;  /* We want a little more space between sections */
+  margin-bottom: 2.5em;  We want a little more space between sections
 }
 
-/* Links */
-/* We want the links to be a little more visible  and a different color */
 a {
   color: #065f46;
   text-decoration: none;
@@ -143,8 +237,8 @@ a:hover {
   text-decoration: underline;
 }
   
-/* Images */
 img {
   max-width: 100%;
   height: auto;
 }
+*/
