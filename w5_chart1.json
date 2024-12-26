@@ -1,0 +1,115 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": ["The Gender Gap in Nobel Prizes (1901 - 2024)"],
+    "subtitle": ["Only 18 women recognized in sciences out of 605 Laureates", ""],
+    "fontSize": 13
+  },
+  "config": {
+    "view": {"stroke": null},
+    "axis": {"grid": false},
+    "facet": {"spacing": 25}
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/w5_data.csv"
+  },
+  "transform": [
+    {
+      "calculate": "datum.year_range_label === '2021-2030' ? '2021-2024' : datum.year_range_label",
+      "as": "adjusted_year_range"
+    }
+  ],  
+  "facet": {
+    "row": {
+      "field": "field",
+      "type": "nominal",
+      "title": "",
+      "sort": ["Economics", "Physics", "Chemistry", "Medicine"],
+      "header": {
+        "labelAlign": "left",
+        "labelFontSize": 12,
+        "labelFontWeight": "bold",
+        "labelAnchor": "start",
+        "labelColor": "#000000",
+        "labelOrient": "top", 
+        "labelPadding": 0
+      }   
+    }
+  },
+  "spec": {
+    "width": 400,
+    "height": 100,
+    "layer": [
+      {
+        "mark": "bar",
+        "encoding": {
+          "x": {
+            "field": "adjusted_year_range",
+            "type": "ordinal",
+            "title": "",
+            "axis": {"labelAngle": -45},
+            "scale": {"padding": 0.009}
+          },
+          "y": {
+            "field": "nobel_count",
+            "type": "quantitative",
+            "title": "",
+            "stack": "zero"
+          },
+          "order": {
+            "field": "sex",
+            "type": "nominal",
+            "sort": "ascending"
+          },
+          "color": {
+            "field": "sex",
+            "type": "nominal",
+            "scale": {
+              "domain": ["Male", "Female"],
+              "range": ["#e5e2e2", "#DC3220"]
+            },
+            "title": "Gender",
+            "legend": null
+          },
+          "tooltip": [
+            {"field": "field", "type": "nominal", "title": "Field"},
+            {"field": "adjusted_year_range", "type": "ordinal", "title": "Period"},
+            {"field": "sex", "type": "nominal", "title": "Gender"},
+            {
+              "field": "nobel_count",
+              "type": "quantitative",
+              "title": "Number of Awards"
+            }
+          ]
+        }
+      },
+      {
+        "mark": {
+          "type": "text",
+          "align": "center",
+          "dy": -8,
+          "color": "#DC3220",
+          "fontSize": 12
+        },
+        "encoding": {
+          "x": {
+            "field": "adjusted_year_range",
+            "type": "ordinal"
+          },
+          "y": {
+            "field": "nobel_count",
+            "type": "quantitative",
+            "stack": "zero"
+          },
+          "text": {
+            "field": "nobel_count",
+            "type": "quantitative"
+          }
+        },
+        "transform": [
+          {"filter": "datum.sex === 'Female'"}
+        ]
+      }
+    ]
+  }
+}
