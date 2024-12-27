@@ -1,0 +1,59 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/juaneladio/peru-geojson/refs/heads/master/peru_departamental_simple.geojson",
+      "format": {"property": "features"}
+    },  
+    "view": {"stroke": null},
+    "background": null,
+    "width": 400,
+    "height": 550,
+    "title": {
+      "text": "Poverty 2023, Peru",
+      "anchor": "start",
+      "color": "black",
+      "fontSize": 16,
+      "subtitle":["Source: INEI"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "subtitleColor":"black"
+      },
+    "transform": [
+      {
+        "lookup": "properties.NOMBDEP",
+        "from": {
+          "key": "department",
+          "fields": ["poverty_2023"],
+          "data": {
+            "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/w7_data_poverty.csv"
+          }
+        }
+      }
+    ],
+    "projection": {"type": "mercator"},
+    "mark": {
+      "type": "geoshape",
+      "stroke": "#000", 
+      "strokeWidth": 0.25 
+      },
+    "encoding": {
+      "color": {
+        "field": "poverty_2023",
+        "type": "quantitative",
+        "scale": {"scheme": "goldorange"},
+        "legend": {"title": ""} 
+      },
+      "tooltip": [
+        {
+          "field": "properties.NOMBDEP",
+          "title": "Department"
+        },
+        {
+          "field": "poverty_2023",
+          "title": "Poverty rate",
+          "format": ","
+        }
+        ]
+    },
+    "config": {}
+  }
