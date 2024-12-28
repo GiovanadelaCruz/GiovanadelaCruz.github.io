@@ -1,0 +1,80 @@
+country,code,year,domestic_work_time_female,domestic_work_time_male,population,region
+Argentina,ARG,2010,17.5,6.6,41288694.0,South America
+Argentina,ARG,2013,23.42,9.25,42582454.0,South America
+Australia,AUS,2021,17.12,11.71,25956416.0,Oceania
+Belgium,BEL,2013,2.43,2.04,11160277.0,Europe
+Bhutan,BTN,2015,15.0,5.9,740624.0,Asia
+Brazil,BRA,2012,13.18,3.03,196876114.0,South America
+Brazil,BRA,2017,11.61,5.13,204703440.0,South America
+Cameroon,CMR,2014,15.82,4.57,22059894.0,Africa
+Canada,CAN,2010,16.25,10.42,34196901.0,North America
+Canada,CAN,2015,14.17,10.0,35962236.0,North America
+China,CHN,2018,15.35,5.9,1419008963.0,Asia
+Colombia,COL,2013,4.22,2.03,46151584.0,South America
+Colombia,COL,2017,16.87,4.59,48131076.0,South America
+Colombia,COL,2021,17.64,5.24,51188174.0,South America
+Costa Rica,CRI,2017,22.15,8.38,4913177.0,North America
+Cuba,CUB,2016,21.0,12.47,11265614.0,North America
+Dominican Republic,DOM,2016,16.71,3.79,10551430.0,North America
+Ecuador,ECU,2012,19.75,4.72,15572194.0,South America
+El Salvador,SLV,2010,22.75,7.85,6068252.0,North America
+El Salvador,SLV,2017,20.21,7.03,6213537.0,North America
+Fiji,FJI,2016,15.16,5.19,919167.0,Oceania
+Finland,FIN,2010,15.2,10.49,5363347.0,Europe
+Finland,FIN,2021,14.06,10.75,5541068.0,Europe
+France,FRA,2010,15.77,9.49,63417366.0,Europe
+Georgia,GEO,2021,17.79,3.71,3788450.0,Asia
+Germany,DEU,2013,16.44,10.38,81041580.0,Europe
+Greece,GRC,2014,18.12,7.01,10893169.0,Europe
+Guatemala,GTM,2014,17.77,2.36,15681725.0,North America
+Guatemala,GTM,2017,19.48,2.61,16567362.0,North America
+Hong Kong,HKG,2013,10.83,3.33,7264330.0,Asia
+Hungary,HUN,2010,17.28,7.98,9979129.0,Europe
+Italy,ITA,2014,19.96,7.5,60664169.0,Europe
+Japan,JPN,2011,15.62,2.99,128096431.0,Asia
+Japan,JPN,2016,15.14,3.12,127159949.0,Asia
+Japan,JPN,2021,14.71,3.75,125679341.0,Asia
+Kazakhstan,KAZ,2018,18.96,6.25,18932725.0,Asia
+Laos,LAO,2017,13.6,10.06,7018149.0,Asia
+Liberia,LBR,2010,6.29,2.58,4058897.0,Africa
+Mexico,MEX,2014,26.97,9.7,119784263.0,North America
+Mexico,MEX,2019,27.77,11.11,125762977.0,North America
+Moldova,MDA,2012,20.14,11.27,3482629.0,Europe
+Mongolia,MNG,2019,19.29,7.6,3232119.0,Asia
+Morocco,MAR,2012,20.83,2.99,33355247.0,Africa
+Norway,NOR,2011,15.31,12.33,4952968.0,Europe
+Palestine,PSE,2013,20.14,2.99,4315264.0,Asia
+Panama,PAN,2011,17.95,7.57,3693508.0,North America
+Paraguay,PRY,2016,14.53,4.27,6249127.0,South America
+Peru,PER,2010,23.56,8.95,29086021.0,South America
+Poland,POL,2013,18.26,9.93,38259266.0,Europe
+Portugal,PRT,2015,17.81,10.24,10370266.0,Europe
+Qatar,QAT,2013,8.19,2.22,2032650.0,Asia
+Reunion,REU,2010,16.11,10.0,844480.0,Africa
+Russia,RUS,2014,18.4,8.12,144925638.0,Europe
+Serbia,SRB,2011,20.24,9.49,7364857.0,Europe
+Serbia,SRB,2015,19.17,8.69,7177257.0,Europe
+South Korea,KOR,2014,14.58,3.61,50539055.0,Asia
+South Korea,KOR,2019,12.85,3.82,51767843.0,Asia
+Sweden,SWE,2011,16.04,12.83,9449262.0,Europe
+Switzerland,CHE,2010,16.74,9.77,7825751.0,Europe
+Switzerland,CHE,2013,16.54,10.39,8091197.0,Europe
+Switzerland,CHE,2016,16.83,10.8,8374902.0,Europe
+Switzerland,CHE,2020,17.31,11.47,8640582.0,Europe
+Turkey,TUR,2015,19.15,3.71,80014221.0,Asia
+Uganda,UGA,2018,14.58,7.5,41565839.0,Africa
+United Kingdom,GBR,2015,12.65,6.97,65382107.0,Europe
+United Kingdom,GBR,2022,16.01,12.25,68179315.0,Europe
+United States,USA,2010,15.29,9.88,311062786.0,North America
+United States,USA,2011,15.21,9.67,314105078.0,North America
+United States,USA,2012,15.29,9.33,317115348.0,North America
+United States,USA,2013,15.58,9.71,320110753.0,North America
+United States,USA,2014,15.54,9.71,323115378.0,North America
+United States,USA,2015,15.88,9.75,326126498.0,North America
+United States,USA,2016,15.92,9.79,329179421.0,North America
+United States,USA,2017,15.42,9.88,332204656.0,North America
+United States,USA,2018,15.38,9.54,335056495.0,North America
+United States,USA,2019,15.33,9.67,337790068.0,North America
+United States,USA,2021,15.54,10.12,340161441.0,North America
+United States,USA,2022,15.08,10.08,341534041.0,North America
+Uruguay,URY,2013,19.87,8.38,3345335.0,South America
