@@ -1,0 +1,98 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "height": 350,
+    "width": 400,  
+    "data": {
+      "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/w8_data_chart1.csv",
+      "format": {"type": "csv"}
+    },
+    "title": {
+      "text": "Years of Schooling and Domestic Violence Rate",
+      "fontSize": 14,
+      "subtitle":["Source: UN, UNESCO",""],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "mark": {
+      "type": "circle",
+      "color": "seagreen"
+      },
+    "params": [
+      {
+        "name": "hover",
+        "select": {
+          "type": "point",
+          "on": "pointerover"
+          }
+      }
+    ],    
+    "encoding": {
+      "x": {
+        "field": "mean_years_schooling",
+        "type": "quantitative",
+        "title": "Years of schooling",
+        "axis": {
+          "titleAlign": "right",
+          "titleAnchor": "end",
+          "titleFontSize": 12.5,
+          "titleFontStyle": "italic",
+          "titleFontWeight": "normal"
+        }      
+      },
+      "y": {
+        "field": "pp_women_domestic_violence",
+        "type": "quantitative",
+        "title": ["Domestic", "violence rate"],
+        "axis": {
+          "titleAngle": 0,
+          "titleAlign": "left",
+          "titleX": 5,
+          "titleY": 15,
+          "titleFontSize": 12.5,
+          "titleFontStyle": "italic",
+          "titleFontWeight": "normal",
+          "labelExpr": "(datum.value)+'%'" 
+        }      
+      },
+      "size": {
+        "condition": {
+          "param": "hover",
+          "value": 350,
+          "empty": false
+        },
+        "value": 150
+      },
+      "opacity": {
+        "condition": {
+          "param": "hover",
+          "value": 1,
+          "empty": false
+        },
+        "value": 0.5
+      },
+      "order": {
+        "condition": {
+          "param": "hover",
+          "value": 1,
+          "empty": false
+        },
+        "value": 0
+      },
+      "tooltip": [
+        {"field": "country", "title": "Country"},
+        {"field": "mean_years_schooling", "title": "Average years of schooling", "format": ".2s"},
+        {"field": "pp_women_domestic_violence", "title": "% women who experienced domestic violence"}
+      ]
+    },
+    "config": {
+      "axis": {
+        "grid": true,
+        "gridColor": "#cccccc",
+        "gridDash": [2, 4],
+        "gridWidth": 0.5
+      }
+    },
+    "view": {"stroke": null}
+  }
