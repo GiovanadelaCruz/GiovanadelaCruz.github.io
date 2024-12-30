@@ -1,0 +1,134 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+      "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/portfolio/data/w9_data_chart1.csv"
+    },
+    "width": 350,
+    "height": 250,
+    "title": {
+      "text": "Price Trends of Healthy Foods Over Time",
+      "fontSize": 14,
+      "subtitle": ["Source: ONS Microdata via Davies", ""],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "transform": [
+      {
+        "calculate": "lower(datum.description)",
+        "as": "description_lower"
+      },
+      {
+        "filter": "categoryFilter === 'all' || datum.category === categoryFilter"
+      }
+    ],
+    "params": [
+      {
+        "name": "categoryFilter",
+        "value": "vegetable",
+        "bind": {
+          "input": "radio",
+          "options": ["fruit", "vegetable"],
+          "labels": ["Fruit", "Vegetable"],
+          "name": "Category:"
+        }
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "quote_date",
+        "type": "temporal",
+        "title": "",
+        "axis": {
+          "ticks": false,
+          "grid": false,
+          "labelFontSize": 10,
+          "labelPadding": 7        
+        }
+      },
+      "y": {
+        "field": "price",
+        "type": "quantitative",
+        "title": "",
+        "axis": {
+          "ticks": false,
+          "labelExpr": "(datum.value)+'£'",
+          "gridOpacity": 0.3,
+          "labelFontSize": 10,
+          "labelPadding": 7,
+          "gridColor": "#cccccc",
+          "gridDash": [3, 4],
+          "gridWidth": 1
+        }
+      },
+      "color": {
+        "condition": {
+          "param": "hover",
+          "field": "item_id",
+          "type": "nominal",
+          "legend": null
+        },
+        "value": "grey"
+      },
+      "opacity": {
+        "condition": {
+          "param": "hover",
+          "value": 1
+        },
+        "value": 0.2
+      }
+    },
+    "layer": [
+      {
+        "params": [
+          {
+            "name": "hover",
+            "select": {
+              "type": "point",
+              "fields": ["item_id"],
+              "on": "pointerover"
+            }
+          }
+        ],
+        "mark": {
+          "type": "line",
+          "strokeWidth": 10,
+          "stroke": "transparent"
+        }
+      },
+      {
+        "mark": {
+          "type": "line",
+          "strokeWidth": 1.5,
+          "interpolate": "monotone"
+        }
+      },
+      {
+        "encoding": {
+          "x": {"aggregate": "max", "field": "quote_date"},
+          "y": {"aggregate": {"argmax": "quote_date"}, "field": "price"}
+        },
+        "layer": [
+          {
+            "mark": {
+              "type": "text",
+              "align": "left",
+              "dx": -0,
+              "dy": -5,
+              "angle": 0
+            },
+            "encoding": {
+              "text": {
+                "field": "description_lower",
+                "type": "nominal"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "config": {
+      "view": {"stroke": null}
+      }
+  }
