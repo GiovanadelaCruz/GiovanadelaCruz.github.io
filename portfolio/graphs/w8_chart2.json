@@ -1,0 +1,209 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "height": 350,
+  "width": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/portfolio/data/w8_data_chart2.csv",
+    "format": {"type": "csv"}
+  },
+  "title": {
+    "text": "Gender Gap at Home: Time on Domestic Tasks",
+    "fontSize": 14,
+    "subtitle": ["Latest available","Source: UN Statistics Division and UN Women", ""],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "transform": [
+    {"calculate": "datum.population / 1000000", "as": "population_millions"}
+  ],
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "leg_region",
+          "select": {"type": "point", "fields": ["region"]},
+          "bind": "legend"
+        }
+      ],
+      "mark": {"type": "circle"},
+      "encoding": {
+        "y": {
+          "field": "domestic_work_time_female",
+          "type": "quantitative",
+          "scale": {"domain": [0, 30]},
+          "axis": {
+            "title": "% domestic work (women)",
+            "values": [5, 10, 15, 20, 25, 30],
+            "gridOpacity": 0.3,
+            "labelFontSize": 11,
+            "labelPadding": 5,
+            "titlePadding": 6,
+            "ticks": false,
+            "labelExpr": "(datum.value)+'%'",
+            "titleFontSize": 12.5,
+            "titleFontStyle": "italic",
+            "titleFontWeight": "lighter"
+          }
+        },
+        "x": {
+          "field": "domestic_work_time_male",
+          "type": "quantitative",
+          "scale": {"domain": [0, 15]},
+          "axis": {
+            "title": "% domestic work (men)",
+            "values": [5, 10, 15],
+            "gridOpacity": 0.3,
+            "tickCount": 10,
+            "labelFontSize": 11,
+            "labelPadding": 5,
+            "titlePadding": 6,
+            "ticks": false,
+            "labelExpr": "(datum.value)+'%'",
+            "titleFontSize": 12.5,
+            "titleFontStyle": "italic",
+            "titleFontWeight": "lighter"        
+          }
+        },
+        "color": {
+          "field": "region",
+          "type": "nominal",
+          "scale": {
+            "range": ["#7ad151", "#22a884", "#fde725", "#2a788e", "#414487", "#440154"]
+          },          
+          "legend": {
+            "title": null,
+            "direction": "horizontal",
+            "orient": "top",
+            "offset": 15,
+            "labelFontSize": 11,
+            "labelPadding": 10,
+            "columns": 3,
+            "labelOffset": 5
+          }
+        },
+        "size": {
+          "field": "population_millions",
+          "type": "quantitative",
+          "legend": null,
+          "scale": {"type": "linear", "range": [20,1200]}
+        },
+        "opacity": {
+          "condition": {"param": "leg_region", "value": 1},
+          "value": 0.3
+        },
+        "tooltip": [
+          {"field": "year", "title": "Year"},
+          {"field": "country", "title": "Country"},
+          {
+            "field": "domestic_work_time_female",
+            "title": "Female, % of 24 hour day",
+            "format": ".1f"
+          },
+          {
+            "field": "domestic_work_time_male",
+            "title": "Male, % of 24 hour day",
+            "format": ".1f"
+          },
+          {
+            "field": "population_millions",
+            "title": "Population (millions)",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x": 0, "y": 0},
+          {"x": 16, "y": 16}
+        ]
+      },
+      "mark": {
+        "type": "line", 
+        "color": "grey", 
+        "size": 0.5,
+        "opacity": 0.4
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x": 0, "y": 0},
+          {"x": 10, "y": 30}
+        ]
+      },
+      "mark": {
+        "type": "line", 
+        "color": "grey",
+        "size": 0.5,
+        "opacity": 0.4
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x": 8, "y": 8, "text": "equal time spent on domestic work"}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -190,
+        "dy": -6,
+        "angle": -25,
+        "fontSize": 10,
+        "fontStyle": "italic",
+        "fontWeight": "lighter",
+        "opacity": 0.7
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "text", "type": "nominal"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"x": 5, "y": 21, "text": "women spent 4x more time"}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": -240,
+        "dy": 35,
+        "angle": -54,
+        "fontSize": 10,
+        "fontStyle": "italic",
+        "fontWeight": "lighter",
+        "opacity": 0.7
+      },
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "text", "type": "nominal"}
+      }
+    }
+  ],
+  "config": {
+    "axis": {
+      "grid": true,
+      "gridColor": "#cccccc",
+      "gridDash": [3, 4],
+      "gridWidth": 1
+    }
+  },
+  "view": {"stroke": null}
+}

@@ -16,15 +16,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     
     <!--Vega-->
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
-    
-    <!-- 
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    -->
+
 </head>
     
 <body>
@@ -125,7 +124,7 @@
 
             <!-- Image -->            
             <div class="card-content">
-                <img src="w4_image.png" width="420" height="375" title="The Economist's graph">
+                <img src="portfolio/graphs/w4_image.png" width="420" height="375" title="The Economist's graph">
             </div>
 
             <!-- Chart 1 -->            
@@ -322,20 +321,8 @@
     </section>
 
 
-    <!-- We're organising the page into sections, with each section containing a chart, title and a description -->
-    <section>
-        <div class="chart-description">
-            <h2>Section 1: Co2 greenhouse gas emissions chart</h2>
-            <p> <!-- This is a paragraph, it's the main way to display text on a web page -->
-                [Description].
-            </p>
-        </div>
-        <figure id="Location1"></figure> <!-- we give it an id so we can put a vega-lite graph here with VegaEmbed -->
-    </section>
-
     <!-- A script to run JavaScript code on the page -->
     <script>
-        // This is a comment in JavaScript - it's a different language to HTML and CSS
         // Example: let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
         
         let fig_port_w1_1 = "portfolio/graphs/w1_chart1.json"
@@ -391,11 +378,6 @@
         vegaEmbed('#Portfolio_8_2', fig_port_w8_2)
 
         let figure_5_spec = "goods_services.json"
-
-
-
-
-        
       
     </script>
 
