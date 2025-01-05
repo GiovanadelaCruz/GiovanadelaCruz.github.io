@@ -1,0 +1,80 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 300,
+    "height": 450,
+    "data": {
+      "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/portfolio/data/w9_data_chart2.csv"
+    },
+    "title": {
+      "text": "Regional Food Prices Over Time",
+      "fontSize": 14,
+      "subtitle": [
+        "Mean yearly price of food items",
+        "Source: ONS Microdata via Davies"
+      ],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "params": [
+      {
+        "name": "yearParam",
+        "value": 2024,
+        "bind": {
+          "input": "range",
+          "min": 2000,
+          "max": 2024,
+          "step": 1,
+          "name": "Year:"
+        }
+      },
+      {
+        "name": "itemParam",
+        "value": "212515",
+        "bind": {
+          "input": "select",
+          "name": "Food item:",
+          "options": ["212515", "212516", "212518", "212519", "212520", "212717", "212719", "212722"],
+          "labels": ["Tomatoes", "Cabbage", "Carrots", "Onions", "Mushrooms", "Apples", "Bananas", "Grapes"]
+        }
+      }
+    ],
+    "transform": [
+      {
+        "lookup": "region_id",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/jhellingsdata/RADataHub/refs/heads/main/misc/bigdata/seminar/uk_region_map.json",
+            "format": {"property": "features"}
+          },
+          "key": "properties.id",
+          "fields": ["geometry", "properties", "type"]
+        }
+      },
+      {
+        "filter": "yearParam == datum.year && datum.item_id == itemParam"
+      }
+    ],
+    "encoding": {
+      "color": {
+        "field": "price",
+        "type": "quantitative",
+        "scale": {
+          "scheme": "viridis"
+          },
+        "legend": {
+          "title": "", 
+          "labelExpr": "'£'+datum.label + ' /kg'"}
+      },
+      "tooltip": [
+        {"field": "properties.NAME_LATN", "title": "Region"},
+        {"field": "price", "format": ".2f", "title": "Price"}
+      ]
+    },
+    "mark": {
+      "type": "geoshape",
+      "stroke": "lightgrey",
+      "size": 0.5
+    }
+  }
