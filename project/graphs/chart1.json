@@ -1,0 +1,72 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 700,
+    "height": 380,  
+    "title": {
+      "text": "Labor Force Participation Gender Gap",
+      "subtitle": [
+        "Difference in labor participation (ages 18-64 with advanced education)",
+        "Source: International Labour Organization (lattest available)",
+        ""
+      ],
+      "fontSize": 16,
+      "subtitleFontSize": 12,
+      "subtitleFontWeight": "lighter",
+      "anchor": "middle",
+      "subtitleFontStyle": "italic"
+    },
+    "data": {
+      "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/map_world.geojson",
+      "format": {"property": "features"}
+    },
+    "transform": [
+      {
+        "lookup": "properties.ISO3",
+        "from": {
+          "key": "id_country",
+          "fields": ["name", "value", "year", "id_country"],
+          "data": {
+            "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/project/data/data_chart1.csv"
+          }
+        }
+      },
+      {"calculate": "datum.value / 100", "as": "value"}
+    ],
+    "projection": {
+      "type": "naturalEarth1",
+      "scale": 150,
+      "translate": [350, 210]
+    },
+    "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.3},
+    "encoding": {
+      "color": {
+        "field": "value",
+        "type": "quantitative",
+        "legend": {
+          "title": "", 
+          "format": ".0%",
+          "labelExpr": "datum.value == 0 ? 'No Gap' : (datum.value > 0 ? 'Women > Men' : (datum.value < 0 ? 'Men > women' : 'Women > Men'))",
+          "tickCount": 2,
+          "orient": "bottom",
+          "labelAlign": "center",
+          "labelFontSize": 10.5,
+          "labelFontWeight": "lighter",
+          "labelBaseline": "middle"
+          },
+        "scale": {
+          "type": "linear",
+          "scheme": "redyellowgreen",
+          "domain": [-0.55, -0.2, -0.1, 0, 0.05, 0.1, 0.2]
+        },      
+        "condition": {
+          "test": "datum['name'] == null",
+          "value": "lightgrey"
+        }
+      },
+      "tooltip": [
+        {"field": "name", "title": "Country"},
+        {"field": "year", "title": "Year"},
+        {"field": "value", "title": "Value", "format": ".0%"}
+      ]
+    }
+  }
