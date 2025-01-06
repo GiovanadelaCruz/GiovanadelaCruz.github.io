@@ -1,0 +1,635 @@
+country,year,subgroup,subgroup_level,pp_female_ceo
+Afghanistan,2014.0,,,4.7
+Afghanistan,2014.0,Size,Small (5-19),2.8
+Afghanistan,2014.0,Size,Medium (20-99),9
+Afghanistan,2014.0,Size,Large (100+),8.4
+Albania,2019.0,,,18.1
+Albania,2019.0,Size,Small (5-19),17.3
+Albania,2019.0,Size,Medium (20-99),17.2
+Albania,2019.0,Size,Large (100+),31
+Angola,2010.0,,,13.5
+Angola,2010.0,Size,Small (5-19),21.8
+Angola,2010.0,Size,Medium (20-99),3
+Angola,2010.0,Size,Large (100+),7.2
+Antigua and Barbuda,2010.0,,,17.5
+Antigua and Barbuda,2010.0,Size,Small (5-19),22.3
+Antigua and Barbuda,2010.0,Size,Medium (20-99),5.7
+Antigua and Barbuda,2010.0,Size,Large (100+),0
+Argentina,2017.0,,,8
+Argentina,2017.0,Size,Small (5-19),9.5
+Argentina,2017.0,Size,Medium (20-99),4.7
+Argentina,2017.0,Size,Large (100+),6.9
+Armenia,2020.0,,,19.1
+Armenia,2020.0,Size,Small (5-19),22.2
+Armenia,2020.0,Size,Medium (20-99),13.8
+Armenia,2020.0,Size,Large (100+),15.8
+Austria,2021.0,,,18.8
+Austria,2021.0,Size,Small (5-19),20.1
+Austria,2021.0,Size,Medium (20-99),17.8
+Austria,2021.0,Size,Large (100+),4.2
+Azerbaijan,2019.0,,,16.5
+Azerbaijan,2019.0,Size,Small (5-19),16.1
+Azerbaijan,2019.0,Size,Medium (20-99),23.3
+Azerbaijan,2019.0,Size,Large (100+),4.1
+"Bahamas, The",2010.0,,,33.2
+"Bahamas, The",2010.0,Size,Small (5-19),37.4
+"Bahamas, The",2010.0,Size,Medium (20-99),34.9
+"Bahamas, The",2010.0,Size,Large (100+),5
+Bangladesh,2022.0,,,3.6
+Bangladesh,2022.0,Size,Small (5-19),3.2
+Bangladesh,2022.0,Size,Medium (20-99),3.9
+Bangladesh,2022.0,Size,Large (100+),3.9
+Barbados,2023.0,,,16.9
+Barbados,2023.0,Size,Small (5-19),16.7
+Barbados,2023.0,Size,Medium (20-99),21.6
+Barbados,2023.0,Size,Large (100+),5.1
+Belarus,2018.0,,,21.1
+Belarus,2018.0,Size,Small (5-19),26.3
+Belarus,2018.0,Size,Medium (20-99),15.6
+Belarus,2018.0,Size,Large (100+),5.5
+Belgium,2020.0,,,17.9
+Belgium,2020.0,Size,Small (5-19),18.3
+Belgium,2020.0,Size,Medium (20-99),18
+Belgium,2020.0,Size,Large (100+),11.6
+Belize,2010.0,,,25.5
+Belize,2010.0,Size,Small (5-19),26
+Belize,2010.0,Size,Medium (20-99),26.1
+Belize,2010.0,Size,Large (100+),0
+Benin,2016.0,,,25.9
+Benin,2016.0,Size,Medium (20-99),6.5
+Benin,2016.0,Size,Small (5-19),48.1
+Benin,2016.0,Size,Large (100+),3.1
+Bhutan,2024.0,,,21.4
+Bhutan,2024.0,Size,Small (5-19),24
+Bhutan,2024.0,Size,Medium (20-99),19.6
+Bhutan,2024.0,Size,Large (100+),2.3
+Bolivia,2017.0,,,26.3
+Bolivia,2017.0,Size,Small (5-19),31.9
+Bolivia,2017.0,Size,Medium (20-99),10.8
+Bolivia,2017.0,Size,Large (100+),4.2
+Bosnia and Herzegovina,2023.0,,,15.3
+Bosnia and Herzegovina,2023.0,Size,Small (5-19),16.8
+Bosnia and Herzegovina,2023.0,Size,Medium (20-99),10.7
+Bosnia and Herzegovina,2023.0,Size,Large (100+),19.3
+Botswana,2023.0,,,23
+Botswana,2023.0,Size,Small (5-19),25.9
+Botswana,2023.0,Size,Medium (20-99),16.1
+Botswana,2023.0,Size,Large (100+),26.5
+Brazil,2009.0,,,19.4
+Brazil,2009.0,Size,Medium (20-99),24.8
+Brazil,2009.0,Size,Small (5-19),18.5
+Brazil,2009.0,Size,Large (100+),4.3
+Bulgaria,2023.0,,,23.5
+Bulgaria,2023.0,Size,Small (5-19),25.3
+Bulgaria,2023.0,Size,Medium (20-99),21.8
+Bulgaria,2023.0,Size,Large (100+),13.9
+Burkina Faso,2009.0,,,11.3
+Burkina Faso,2009.0,Size,Small (5-19),10.1
+Burkina Faso,2009.0,Size,Medium (20-99),16.9
+Burkina Faso,2009.0,Size,Large (100+),5
+Burundi,2014.0,,,16.3
+Burundi,2014.0,Size,Small (5-19),22.9
+Burundi,2014.0,Size,Medium (20-99),5.1
+Burundi,2014.0,Size,Large (100+),20.9
+Cabo Verde,2009.0,,,16.7
+Cabo Verde,2009.0,Size,Small (5-19),19.6
+Cabo Verde,2009.0,Size,Medium (20-99),7.6
+Cabo Verde,2009.0,Size,Large (100+),8.5
+Cambodia,2023.0,,,33.7
+Cambodia,2023.0,Size,Small (5-19),36.9
+Cambodia,2023.0,Size,Medium (20-99),24.1
+Cambodia,2023.0,Size,Large (100+),20.8
+Cameroon,2016.0,,,22.9
+Cameroon,2016.0,Size,Small (5-19),20.9
+Cameroon,2016.0,Size,Medium (20-99),31.8
+Cameroon,2016.0,Size,Large (100+),20.5
+Central African Republic,2023.0,,,10.2
+Central African Republic,2023.0,Size,Small (5-19),14.7
+Central African Republic,2023.0,Size,Medium (20-99),0
+Central African Republic,2023.0,Size,Large (100+),0
+Chad,2023.0,,,8.5
+Chad,2023.0,Size,Small (5-19),8.1
+Chad,2023.0,Size,Medium (20-99),14
+Chad,2023.0,Size,Large (100+),0
+Chile,2010.0,,,4.5
+Chile,2010.0,Size,Medium (20-99),3.7
+Chile,2010.0,Size,Large (100+),1.5
+Chile,2010.0,Size,Small (5-19),8.5
+China,2012.0,,,17.5
+China,2012.0,Size,Medium (20-99),12.2
+China,2012.0,Size,Large (100+),12.8
+China,2012.0,Size,Small (5-19),21.8
+Colombia,2023.0,,,24.6
+Colombia,2023.0,Size,Small (5-19),28
+Colombia,2023.0,Size,Medium (20-99),21.2
+Colombia,2023.0,Size,Large (100+),13.6
+"Congo, Dem. Rep.",2013.0,,,10.8
+"Congo, Dem. Rep.",2013.0,Size,Small (5-19),12.2
+"Congo, Dem. Rep.",2013.0,Size,Medium (20-99),3.4
+"Congo, Dem. Rep.",2013.0,Size,Large (100+),6.6
+"Congo, Rep.",2024.0,,,19.3
+"Congo, Rep.",2024.0,Size,Small (5-19),18.2
+"Congo, Rep.",2024.0,Size,Medium (20-99),17.5
+"Congo, Rep.",2024.0,Size,Large (100+),29.6
+Costa Rica,2023.0,,,25.3
+Costa Rica,2023.0,Size,Small (5-19),26.3
+Costa Rica,2023.0,Size,Medium (20-99),29.6
+Costa Rica,2023.0,Size,Large (100+),7.4
+Cote d'Ivoire,2023.0,,,11.6
+Cote d'Ivoire,2023.0,Size,Small (5-19),17.4
+Cote d'Ivoire,2023.0,Size,Medium (20-99),5.1
+Cote d'Ivoire,2023.0,Size,Large (100+),0.5
+Croatia,2023.0,,,26.2
+Croatia,2023.0,Size,Small (5-19),28.7
+Croatia,2023.0,Size,Medium (20-99),21.2
+Croatia,2023.0,Size,Large (100+),11.4
+Cyprus,2019.0,,,8.2
+Cyprus,2019.0,Size,Small (5-19),7.6
+Cyprus,2019.0,Size,Medium (20-99),12.2
+Cyprus,2019.0,Size,Large (100+),3
+Czechia,2019.0,,,16.1
+Czechia,2019.0,Size,Small (5-19),18.6
+Czechia,2019.0,Size,Medium (20-99),10.9
+Czechia,2019.0,Size,Large (100+),4.3
+Denmark,2020.0,,,8.3
+Denmark,2020.0,Size,Small (5-19),8.9
+Denmark,2020.0,Size,Medium (20-99),8.2
+Denmark,2020.0,Size,Large (100+),3.1
+Djibouti,2013.0,,,14.2
+Djibouti,2013.0,Size,Small (5-19),14.4
+Djibouti,2013.0,Size,Medium (20-99),15.3
+Djibouti,2013.0,Size,Large (100+),7.1
+Dominica,2010.0,,,23.6
+Dominica,2010.0,Size,Small (5-19),23.8
+Dominica,2010.0,Size,Medium (20-99),26.9
+Dominica,2010.0,Size,Large (100+),n.a.
+Dominican Republic,2016.0,,,21.2
+Dominican Republic,2016.0,Size,Small (5-19),25
+Dominican Republic,2016.0,Size,Medium (20-99),12.8
+Dominican Republic,2016.0,Size,Large (100+),18.1
+Ecuador,2017.0,,,22.9
+Ecuador,2017.0,Size,Small (5-19),25.4
+Ecuador,2017.0,Size,Medium (20-99),23.7
+Ecuador,2017.0,Size,Large (100+),5.8
+"Egypt, Arab Rep.",2020.0,,,6.3
+"Egypt, Arab Rep.",2020.0,Size,Small (5-19),6.5
+"Egypt, Arab Rep.",2020.0,Size,Medium (20-99),6.4
+"Egypt, Arab Rep.",2020.0,Size,Large (100+),1.1
+El Salvador,2023.0,,,25.6
+El Salvador,2023.0,Size,Small (5-19),30.2
+El Salvador,2023.0,Size,Medium (20-99),19.3
+El Salvador,2023.0,Size,Large (100+),8.8
+Eritrea,2009.0,,,7.6
+Eritrea,2009.0,Size,Small (5-19),9.7
+Eritrea,2009.0,Size,Medium (20-99),1.6
+Eritrea,2009.0,Size,Large (100+),0
+Estonia,2023.0,,,16
+Estonia,2023.0,Size,Small (5-19),14
+Estonia,2023.0,Size,Medium (20-99),19.7
+Estonia,2023.0,Size,Large (100+),31.4
+Eswatini,2016.0,,,27.4
+Eswatini,2016.0,Size,Small (5-19),31.3
+Eswatini,2016.0,Size,Medium (20-99),23
+Eswatini,2016.0,Size,Large (100+),14.6
+Ethiopia,2015.0,,,4.5
+Ethiopia,2015.0,Size,Small (5-19),4.1
+Ethiopia,2015.0,Size,Medium (20-99),5.3
+Ethiopia,2015.0,Size,Large (100+),4.9
+Fiji,2009.0,,,
+Fiji,2009.0,Size,Small (5-19),
+Fiji,2009.0,Size,Medium (20-99),
+Fiji,2009.0,Size,Large (100+),
+Finland,2020.0,,,12.9
+Finland,2020.0,Size,Small (5-19),15.6
+Finland,2020.0,Size,Medium (20-99),9.2
+Finland,2020.0,Size,Large (100+),2.1
+France,2021.0,,,19.9
+France,2021.0,Size,Small (5-19),23.7
+France,2021.0,Size,Medium (20-99),8.2
+France,2021.0,Size,Large (100+),10.2
+Gabon,2009.0,,,11.5
+Gabon,2009.0,Size,Small (5-19),19.5
+Gabon,2009.0,Size,Medium (20-99),5.1
+Gabon,2009.0,Size,Large (100+),0
+"Gambia, The",2023.0,,,8.2
+"Gambia, The",2023.0,Size,Small (5-19),7.4
+"Gambia, The",2023.0,Size,Medium (20-99),12.4
+"Gambia, The",2023.0,Size,Large (100+),0
+Georgia,2023.0,,,21
+Georgia,2023.0,Size,Small (5-19),23.6
+Georgia,2023.0,Size,Medium (20-99),17.1
+Georgia,2023.0,Size,Large (100+),15.2
+Germany,2021.0,,,14.2
+Germany,2021.0,Size,Small (5-19),16.4
+Germany,2021.0,Size,Medium (20-99),11
+Germany,2021.0,Size,Large (100+),5.5
+Ghana,2023.0,,,19.8
+Ghana,2023.0,Size,Small (5-19),23.6
+Ghana,2023.0,Size,Medium (20-99),11.7
+Ghana,2023.0,Size,Large (100+),18.1
+Greece,2023.0,,,15.6
+Greece,2023.0,Size,Medium (20-99),12.7
+Greece,2023.0,Size,Small (5-19),16.9
+Greece,2023.0,Size,Large (100+),17.2
+Grenada,2010.0,,,24
+Grenada,2010.0,Size,Small (5-19),26.2
+Grenada,2010.0,Size,Medium (20-99),19.6
+Grenada,2010.0,Size,Large (100+),16.3
+Guatemala,2017.0,,,18.5
+Guatemala,2017.0,Size,Small (5-19),20.3
+Guatemala,2017.0,Size,Medium (20-99),15.3
+Guatemala,2017.0,Size,Large (100+),12.1
+Guinea,2016.0,,,5.8
+Guinea,2016.0,Size,Small (5-19),6.8
+Guinea,2016.0,Size,Medium (20-99),1.7
+Guinea,2016.0,Size,Large (100+),0
+Guinea-Bissau,2006.0,,,
+Guinea-Bissau,2006.0,Size,Small (5-19),
+Guinea-Bissau,2006.0,Size,Medium (20-99),
+Guinea-Bissau,2006.0,Size,Large (100+),
+"Guyana, CR",2010.0,,,17.7
+"Guyana, CR",2010.0,Size,Medium (20-99),19.3
+"Guyana, CR",2010.0,Size,Small (5-19),21.4
+"Guyana, CR",2010.0,Size,Large (100+),7
+Honduras,2016.0,,,28
+Honduras,2016.0,Size,Small (5-19),32.9
+Honduras,2016.0,Size,Medium (20-99),20.1
+Honduras,2016.0,Size,Large (100+),5.1
+"Hong Kong SAR, China",2023.0,,,43.6
+"Hong Kong SAR, China",2023.0,Size,Small (5-19),44.4
+"Hong Kong SAR, China",2023.0,Size,Medium (20-99),38.1
+"Hong Kong SAR, China",2023.0,Size,Large (100+),59.8
+Hungary,2023.0,,,18.1
+Hungary,2023.0,Size,Small (5-19),19.7
+Hungary,2023.0,Size,Medium (20-99),9.3
+Hungary,2023.0,Size,Large (100+),5.1
+India,2022.0,,,6.8
+India,2022.0,Size,Small (5-19),6.7
+India,2022.0,Size,Medium (20-99),6.8
+India,2022.0,Size,Large (100+),12.1
+Indonesia,2023.0,,,31.8
+Indonesia,2023.0,Size,Small (5-19),33.3
+Indonesia,2023.0,Size,Medium (20-99),29.1
+Indonesia,2023.0,Size,Large (100+),26.9
+Iraq,2022.0,,,1.6
+Iraq,2022.0,Size,Small (5-19),2.2
+Iraq,2022.0,Size,Medium (20-99),0.3
+Iraq,2022.0,Size,Large (100+),0
+Ireland,2020.0,,,15.1
+Ireland,2020.0,Size,Small (5-19),16.7
+Ireland,2020.0,Size,Medium (20-99),12.7
+Ireland,2020.0,Size,Large (100+),6.9
+Israel,2013.0,,,10.1
+Israel,2013.0,Size,Small (5-19),12.9
+Israel,2013.0,Size,Medium (20-99),3.5
+Israel,2013.0,Size,Large (100+),5.1
+Italy,2019.0,,,15.3
+Italy,2019.0,Size,Small (5-19),15.4
+Italy,2019.0,Size,Medium (20-99),14.8
+Italy,2019.0,Size,Large (100+),15
+Jamaica,2010.0,,,24.1
+Jamaica,2010.0,Size,Medium (20-99),29.5
+Jamaica,2010.0,Size,Small (5-19),22.7
+Jamaica,2010.0,Size,Large (100+),8.3
+Jordan,2019.0,,,3.1
+Jordan,2019.0,Size,Small (5-19),3.8
+Jordan,2019.0,Size,Medium (20-99),2.9
+Jordan,2019.0,Size,Large (100+),0.1
+Kazakhstan,2019.0,,,26
+Kazakhstan,2019.0,Size,Small (5-19),27
+Kazakhstan,2019.0,Size,Medium (20-99),25.3
+Kazakhstan,2019.0,Size,Large (100+),13.4
+Kenya,2018.0,,,18.1
+Kenya,2018.0,Size,Small (5-19),22.1
+Kenya,2018.0,Size,Medium (20-99),9.9
+Kenya,2018.0,Size,Large (100+),8.8
+Kosovo,2019.0,,,2.7
+Kosovo,2019.0,Size,Small (5-19),3.4
+Kosovo,2019.0,Size,Medium (20-99),0.9
+Kosovo,2019.0,Size,Large (100+),0
+Kyrgyz Republic,2023.0,,,21.7
+Kyrgyz Republic,2023.0,Size,Medium (20-99),10.6
+Kyrgyz Republic,2023.0,Size,Small (5-19),29.8
+Kyrgyz Republic,2023.0,Size,Large (100+),6.1
+Lao PDR,2018.0,,,43.1
+Lao PDR,2018.0,Size,Small (5-19),53.2
+Lao PDR,2018.0,Size,Medium (20-99),12.2
+Lao PDR,2018.0,Size,Large (100+),5.9
+Latvia,2019.0,,,32.6
+Latvia,2019.0,Size,Small (5-19),34.7
+Latvia,2019.0,Size,Medium (20-99),28.2
+Latvia,2019.0,Size,Large (100+),24.1
+Lebanon,2019.0,,,5.9
+Lebanon,2019.0,Size,Small (5-19),5.1
+Lebanon,2019.0,Size,Medium (20-99),5
+Lebanon,2019.0,Size,Large (100+),25.1
+Lesotho,2023.0,,,30
+Lesotho,2023.0,Size,Small (5-19),32.1
+Lesotho,2023.0,Size,Medium (20-99),25.8
+Lesotho,2023.0,Size,Large (100+),30.1
+Liberia,2017.0,,,20.4
+Liberia,2017.0,Size,Small (5-19),14.9
+Liberia,2017.0,Size,Medium (20-99),34.4
+Liberia,2017.0,Size,Large (100+),10.2
+Lithuania,2019.0,,,30.7
+Lithuania,2019.0,Size,Small (5-19),32
+Lithuania,2019.0,Size,Medium (20-99),28.5
+Lithuania,2019.0,Size,Large (100+),17.8
+Luxembourg,2020.0,,,7.4
+Luxembourg,2020.0,Size,Small (5-19),8.5
+Luxembourg,2020.0,Size,Medium (20-99),6.3
+Luxembourg,2020.0,Size,Large (100+),4.1
+Madagascar,2022.0,,,37.3
+Madagascar,2022.0,Size,Small (5-19),45.4
+Madagascar,2022.0,Size,Medium (20-99),12.2
+Madagascar,2022.0,Size,Large (100+),10.6
+Malawi,2014.0,,,14.2
+Malawi,2014.0,Size,Small (5-19),17.3
+Malawi,2014.0,Size,Medium (20-99),13.9
+Malawi,2014.0,Size,Large (100+),3.6
+Malaysia,2019.0,,,33.2
+Malaysia,2019.0,Size,Medium (20-99),22.4
+Malaysia,2019.0,Size,Small (5-19),39.2
+Malaysia,2019.0,Size,Large (100+),19.7
+Mali,2016.0,,,11.6
+Mali,2016.0,Size,Small (5-19),13
+Mali,2016.0,Size,Medium (20-99),8.3
+Mali,2016.0,Size,Large (100+),13.6
+Malta,2019.0,,,11.3
+Malta,2019.0,Size,Small (5-19),12.8
+Malta,2019.0,Size,Medium (20-99),10.4
+Malta,2019.0,Size,Large (100+),7.2
+Mauritania,2014.0,,,4.5
+Mauritania,2014.0,Size,Small (5-19),2
+Mauritania,2014.0,Size,Medium (20-99),7.2
+Mauritania,2014.0,Size,Large (100+),5.5
+Mauritius,2023.0,,,18.1
+Mauritius,2023.0,Size,Small (5-19),25.1
+Mauritius,2023.0,Size,Medium (20-99),12.5
+Mauritius,2023.0,Size,Large (100+),5.5
+Mexico,2023.0,,,15.7
+Mexico,2023.0,Size,Small (5-19),19.5
+Mexico,2023.0,Size,Large (100+),1
+Mexico,2023.0,Size,Medium (20-99),8.4
+"Micronesia, Fed. Sts.",2009.0,,,
+"Micronesia, Fed. Sts.",2009.0,Size,Small (5-19),
+"Micronesia, Fed. Sts.",2009.0,Size,Medium (20-99),
+Moldova,2024.0,,,21.6
+Moldova,2024.0,Size,Medium (20-99),9.2
+Moldova,2024.0,Size,Small (5-19),26.3
+Moldova,2024.0,Size,Large (100+),15.6
+Mongolia,2019.0,,,38.9
+Mongolia,2019.0,Size,Small (5-19),44.4
+Mongolia,2019.0,Size,Medium (20-99),26.9
+Mongolia,2019.0,Size,Large (100+),24.4
+Montenegro,2023.0,,,13.5
+Montenegro,2023.0,Size,Small (5-19),13.6
+Montenegro,2023.0,Size,Medium (20-99),4.6
+Montenegro,2023.0,Size,Large (100+),33.3
+Morocco,2023.0,,,5.4
+Morocco,2023.0,Size,Medium (20-99),1.8
+Morocco,2023.0,Size,Small (5-19),6.8
+Morocco,2023.0,Size,Large (100+),8.3
+Mozambique,2018.0,,,15.6
+Mozambique,2018.0,Size,Small (5-19),17.2
+Mozambique,2018.0,Size,Medium (20-99),16.1
+Mozambique,2018.0,Size,Large (100+),1.6
+Myanmar,2016.0,,,41.1
+Myanmar,2016.0,Size,Small (5-19),44.5
+Myanmar,2016.0,Size,Medium (20-99),25.6
+Myanmar,2016.0,Size,Large (100+),37.3
+Namibia,2014.0,,,27.4
+Namibia,2014.0,Size,Small (5-19),28.3
+Namibia,2014.0,Size,Medium (20-99),24.5
+Namibia,2014.0,Size,Large (100+),21.6
+Nepal,2023.0,,,10.3
+Nepal,2023.0,Size,Small (5-19),10.6
+Nepal,2023.0,Size,Medium (20-99),8.8
+Nepal,2023.0,Size,Large (100+),11.2
+Netherlands,2020.0,,,13.7
+Netherlands,2020.0,Size,Small (5-19),12.6
+Netherlands,2020.0,Size,Medium (20-99),16.2
+Netherlands,2020.0,Size,Large (100+),11.9
+New Zealand,2023.0,,,20.3
+New Zealand,2023.0,Size,Small (5-19),19.9
+New Zealand,2023.0,Size,Medium (20-99),20.9
+New Zealand,2023.0,Size,Large (100+),28.6
+Nicaragua,2016.0,,,27
+Nicaragua,2016.0,Size,Medium (20-99),36.9
+Nicaragua,2016.0,Size,Small (5-19),23
+Nicaragua,2016.0,Size,Large (100+),2.1
+Niger,2017.0,,,10.6
+Niger,2017.0,Size,Small (5-19),8.9
+Niger,2017.0,Size,Medium (20-99),16.8
+Niger,2017.0,Size,Large (100+),4.7
+Nigeria,2014.0,,,13.9
+Nigeria,2014.0,Size,Small (5-19),16
+Nigeria,2014.0,Size,Medium (20-99),5.6
+Nigeria,2014.0,Size,Large (100+),6.2
+North Macedonia,2023.0,,,16.4
+North Macedonia,2023.0,Size,Small (5-19),16.9
+North Macedonia,2023.0,Size,Medium (20-99),13.3
+North Macedonia,2023.0,Size,Large (100+),18.3
+Pakistan,2022.0,,,3.4
+Pakistan,2022.0,Size,Medium (20-99),1.4
+Pakistan,2022.0,Size,Small (5-19),2.7
+Pakistan,2022.0,Size,Large (100+),12.7
+Panama,2010.0,,,23.5
+Panama,2010.0,Size,Medium (20-99),24.9
+Panama,2010.0,Size,Small (5-19),24
+Panama,2010.0,Size,Large (100+),12.8
+Papua New Guinea,2015.0,,,13.8
+Papua New Guinea,2015.0,Size,Medium (20-99),9.2
+Papua New Guinea,2015.0,Size,Large (100+),17.3
+Papua New Guinea,2015.0,Size,Small (5-19),19.4
+Paraguay,2023.0,,,19.1
+Paraguay,2023.0,Size,Medium (20-99),16
+Paraguay,2023.0,Size,Small (5-19),22.2
+Paraguay,2023.0,Size,Large (100+),10.7
+Peru,2023.0,,,22.4
+Peru,2023.0,Size,Small (5-19),24.9
+Peru,2023.0,Size,Medium (20-99),20.1
+Peru,2023.0,Size,Large (100+),12.2
+Philippines,2023.0,,,43.4
+Philippines,2023.0,Size,Small (5-19),45.6
+Philippines,2023.0,Size,Medium (20-99),38.3
+Philippines,2023.0,Size,Large (100+),37.2
+Poland,2019.0,,,27.8
+Poland,2019.0,Size,Small (5-19),28.1
+Poland,2019.0,Size,Medium (20-99),25.5
+Poland,2019.0,Size,Large (100+),25.7
+Portugal,2023.0,,,19.1
+Portugal,2023.0,Size,Small (5-19),21.2
+Portugal,2023.0,Size,Medium (20-99),13.3
+Portugal,2023.0,Size,Large (100+),4.2
+Romania,2023.0,,,19
+Romania,2023.0,Size,Small (5-19),18.1
+Romania,2023.0,Size,Medium (20-99),25.3
+Romania,2023.0,Size,Large (100+),7
+Russian Federation,2019.0,,,24.3
+Russian Federation,2019.0,Size,Small (5-19),24.6
+Russian Federation,2019.0,Size,Medium (20-99),24.5
+Russian Federation,2019.0,Size,Large (100+),16.8
+Rwanda,2023.0,,,28.1
+Rwanda,2023.0,Size,Small (5-19),31.9
+Rwanda,2023.0,Size,Medium (20-99),22.2
+Rwanda,2023.0,Size,Large (100+),7.5
+Samoa,2023.0,,,48
+Samoa,2023.0,Size,Small (5-19),51.8
+Samoa,2023.0,Size,Medium (20-99),36.1
+Samoa,2023.0,Size,Large (100+),n.a.
+Saudi Arabia,2022.0,,,3
+Saudi Arabia,2022.0,Size,Small (5-19),3.9
+Saudi Arabia,2022.0,Size,Medium (20-99),1.2
+Saudi Arabia,2022.0,Size,Large (100+),0.5
+Senegal,2014.0,,,14.1
+Senegal,2014.0,Size,Small (5-19),18.6
+Senegal,2014.0,Size,Medium (20-99),9.2
+Senegal,2014.0,Size,Large (100+),0.5
+Serbia,2019.0,,,18.2
+Serbia,2019.0,Size,Small (5-19),20.7
+Serbia,2019.0,Size,Medium (20-99),14.5
+Serbia,2019.0,Size,Large (100+),12.4
+Seychelles,2023.0,,,26.3
+Seychelles,2023.0,Size,Small (5-19),23.7
+Seychelles,2023.0,Size,Medium (20-99),37.1
+Seychelles,2023.0,Size,Large (100+),14.3
+Sierra Leone,2023.0,,,13
+Sierra Leone,2023.0,Size,Small (5-19),14.2
+Sierra Leone,2023.0,Size,Medium (20-99),0.9
+Sierra Leone,2023.0,Size,Large (100+),0
+Singapore,2023.0,,,21.8
+Singapore,2023.0,Size,Small (5-19),24.5
+Singapore,2023.0,Size,Medium (20-99),18.5
+Singapore,2023.0,Size,Large (100+),10.4
+Slovak Republic,2023.0,,,20.6
+Slovak Republic,2023.0,Size,Small (5-19),21.3
+Slovak Republic,2023.0,Size,Medium (20-99),18.6
+Slovak Republic,2023.0,Size,Large (100+),17
+Slovenia,2019.0,,,18.8
+Slovenia,2019.0,Size,Small (5-19),19.6
+Slovenia,2019.0,Size,Medium (20-99),18.1
+Slovenia,2019.0,Size,Large (100+),10.5
+Solomon Islands,2015.0,,,22.6
+Solomon Islands,2015.0,Size,Medium (20-99),21.4
+Solomon Islands,2015.0,Size,Small (5-19),26.4
+Solomon Islands,2015.0,Size,Large (100+),14.8
+South Africa,2020.0,,,38.5
+South Africa,2020.0,Size,Small (5-19),41
+South Africa,2020.0,Size,Medium (20-99),37.4
+South Africa,2020.0,Size,Large (100+),26.6
+South Sudan,2014.0,,,9.5
+South Sudan,2014.0,Size,Small (5-19),9.7
+South Sudan,2014.0,Size,Medium (20-99),8.6
+South Sudan,2014.0,Size,Large (100+),0
+Spain,2021.0,,,17.6
+Spain,2021.0,Size,Medium (20-99),16.8
+Spain,2021.0,Size,Small (5-19),17.1
+Spain,2021.0,Size,Large (100+),30.9
+Sri Lanka,2011.0,,,8.8
+Sri Lanka,2011.0,Size,Small (5-19),9.5
+Sri Lanka,2011.0,Size,Medium (20-99),7.1
+Sri Lanka,2011.0,Size,Large (100+),4.8
+St. Kitts and Nevis,2010.0,,,21.1
+St. Kitts and Nevis,2010.0,Size,Small (5-19),23.7
+St. Kitts and Nevis,2010.0,Size,Medium (20-99),15.4
+St. Kitts and Nevis,2010.0,Size,Large (100+),19.9
+St. Lucia,2010.0,,,23.7
+St. Lucia,2010.0,Size,Small (5-19),18.7
+St. Lucia,2010.0,Size,Medium (20-99),39.2
+St. Lucia,2010.0,Size,Large (100+),12.6
+St. Vincent and the Grenadines,2010.0,,,38.6
+St. Vincent and the Grenadines,2010.0,Size,Small (5-19),41.3
+St. Vincent and the Grenadines,2010.0,Size,Medium (20-99),25.7
+St. Vincent and the Grenadines,2010.0,Size,Large (100+),52.9
+Sudan,2014.0,,,3.4
+Sudan,2014.0,Size,Small (5-19),2.5
+Sudan,2014.0,Size,Medium (20-99),4.6
+Sudan,2014.0,Size,Large (100+),4.4
+Suriname,2018.0,,,11.9
+Suriname,2018.0,Size,Small (5-19),13.3
+Suriname,2018.0,Size,Medium (20-99),9.2
+Suriname,2018.0,Size,Large (100+),6.8
+Sweden,2020.0,,,14
+Sweden,2020.0,Size,Medium (20-99),16.9
+Sweden,2020.0,Size,Small (5-19),12.9
+Sweden,2020.0,Size,Large (100+),14.9
+Tajikistan,2019.0,,,6.6
+Tajikistan,2019.0,Size,Small (5-19),7.4
+Tajikistan,2019.0,Size,Medium (20-99),6.2
+Tajikistan,2019.0,Size,Large (100+),1
+Tanzania,2023.0,,,17.5
+Tanzania,2023.0,Size,Small (5-19),17.4
+Tanzania,2023.0,Size,Medium (20-99),17.6
+Tanzania,2023.0,Size,Large (100+),18.4
+Thailand,2016.0,,,64.8
+Thailand,2016.0,Size,Small (5-19),61.3
+Thailand,2016.0,Size,Medium (20-99),70.8
+Thailand,2016.0,Size,Large (100+),75.2
+Timor-Leste,2021.0,,,32.2
+Timor-Leste,2021.0,Size,Small (5-19),33
+Timor-Leste,2021.0,Size,Medium (20-99),32.3
+Timor-Leste,2021.0,Size,Large (100+),16.3
+Togo,2023.0,,,13.2
+Togo,2023.0,Size,Small (5-19),14
+Togo,2023.0,Size,Medium (20-99),15.5
+Togo,2023.0,Size,Large (100+),2.7
+Tonga,2009.0,,,
+Tonga,2009.0,Size,Small (5-19),
+Tonga,2009.0,Size,Medium (20-99),
+Trinidad and Tobago,2010.0,,,20.8
+Trinidad and Tobago,2010.0,Size,Small (5-19),22.8
+Trinidad and Tobago,2010.0,Size,Medium (20-99),16.1
+Trinidad and Tobago,2010.0,Size,Large (100+),12.7
+Tunisia,2020.0,,,10.4
+Tunisia,2020.0,Size,Medium (20-99),10.1
+Tunisia,2020.0,Size,Small (5-19),10.1
+Tunisia,2020.0,Size,Large (100+),12.3
+Turkiye,2019.0,,,3.9
+Turkiye,2019.0,Size,Small (5-19),3
+Turkiye,2019.0,Size,Medium (20-99),6.3
+Turkiye,2019.0,Size,Large (100+),4
+Uganda,2013.0,,,15.4
+Uganda,2013.0,Size,Small (5-19),16.8
+Uganda,2013.0,Size,Medium (20-99),10.5
+Uganda,2013.0,Size,Large (100+),6.9
+Ukraine,2019.0,,,17.7
+Ukraine,2019.0,Size,Medium (20-99),12.8
+Ukraine,2019.0,Size,Small (5-19),21.3
+Ukraine,2019.0,Size,Large (100+),11.9
+Uruguay,2017.0,,,10.6
+Uruguay,2017.0,Size,Medium (20-99),11.1
+Uruguay,2017.0,Size,Small (5-19),10.9
+Uruguay,2017.0,Size,Large (100+),5.6
+Uzbekistan,2019.0,,,12.4
+Uzbekistan,2019.0,Size,Small (5-19),15.1
+Uzbekistan,2019.0,Size,Medium (20-99),6.8
+Uzbekistan,2019.0,Size,Large (100+),2.5
+Vanuatu,2023.0,,,39.7
+Vanuatu,2023.0,Size,Small (5-19),35.3
+Vanuatu,2023.0,Size,Medium (20-99),49.2
+Vanuatu,2023.0,Size,Large (100+),n.a.
+"Venezuela, R.B.",2010.0,,,31.1
+"Venezuela, R.B.",2010.0,Size,Small (5-19),34.6
+"Venezuela, R.B.",2010.0,Size,Medium (20-99),25.5
+"Venezuela, R.B.",2010.0,Size,Large (100+),4.4
+Viet Nam,2023.0,,,19.4
+Viet Nam,2023.0,Size,Medium (20-99),22.5
+Viet Nam,2023.0,Size,Small (5-19),18.9
+Viet Nam,2023.0,Size,Large (100+),10.6
+West Bank and Gaza,2023.0,,,2.7
+West Bank and Gaza,2023.0,Size,Small (5-19),1.2
+West Bank and Gaza,2023.0,Size,Medium (20-99),8.7
+West Bank and Gaza,2023.0,Size,Large (100+),0
+"Yemen, Rep.",2013.0,,,1.6
+"Yemen, Rep.",2013.0,Size,Small (5-19),1.9
+"Yemen, Rep.",2013.0,Size,Medium (20-99),0
+"Yemen, Rep.",2013.0,Size,Large (100+),0
+Zambia,2019.0,,,12.9
+Zambia,2019.0,Size,Small (5-19),13.5
+Zambia,2019.0,Size,Medium (20-99),12.6
+Zambia,2019.0,Size,Large (100+),12.1
+Zimbabwe,2016.0,,,16.3
+Zimbabwe,2016.0,Size,Small (5-19),18.8
+Zimbabwe,2016.0,Size,Medium (20-99),7.8
+Zimbabwe,2016.0,Size,Large (100+),1.8

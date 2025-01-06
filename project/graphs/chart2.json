@@ -40,7 +40,7 @@
       "x": {
         "field": "gap_abs",
         "type": "quantitative",
-        "title": "Female labor force participation",
+        "title": "Gender gap in labor force participation",
         "axis": {
           "titleAlign": "right",
           "titleAnchor": "end",
