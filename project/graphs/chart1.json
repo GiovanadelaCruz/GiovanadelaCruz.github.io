@@ -9,8 +9,8 @@
         "Source: International Labour Organization (lattest available)",
         ""
       ],
-      "fontSize": 16,
-      "subtitleFontSize": 12,
+      "fontSize": 14,
+      "subtitleFontSize": 10,
       "subtitleFontWeight": "lighter",
       "anchor": "middle",
       "subtitleFontStyle": "italic"

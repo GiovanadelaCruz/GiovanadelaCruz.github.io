@@ -1,0 +1,123 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "view": {"stroke": "transparent"},
+  "width": 250,
+  "height": 450,
+  "title": {
+    "text": "Women in senior leadership positions, OECD countries",
+    "subtitle": [
+      "Participation of women in national parliaments & managerial positions",
+      "Source: United Nations, 2021",
+      ""
+    ],
+    "fontSize": 14,
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/project/data/data_chart3.csv"
+  },
+  "transform": [
+    {"calculate": "datum.pp_female_managers/100", "as": "pp_female_managers"},
+    {"calculate": "datum.pp_female_parliaments/100", "as": "pp_female_parliaments"},
+    {"filter": "datum.oecd == 1 & datum.country != 'United Kingdom'"}
+  ],
+  "encoding": {
+    "y": {
+      "field": "country",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x"
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "bar"},
+      "encoding": {
+        "x": {
+          "field": "pp_female_managers",
+          "type": "quantitative",
+          "title": null,
+          "axis": {
+            "grid": false,
+            "zindex": 1,
+            "gridColor": "white",
+            "gridWidth": 0.5,
+            "format": ".0%"
+          }
+        },
+        "color": {
+          "datum": "Managerial positions",
+          "scale": {
+            "domain": ["Managerial positions", "Parliament positions"],
+            "range": ["#47a7b2", "#e63946"]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top",
+            "direction": "horizontal",
+            "offset": 15
+          }
+        },
+        "tooltip": [
+          {"field": "country", "type": "nominal", "title": "Country"},
+          {"field": "pp_female_managers", "type": "quantitative", "title": "Female Managers (%)", "format": ".1%"}
+        ],
+        "opacity": {"value": 0.8}
+      }
+    },
+    {
+      "mark": {"type": "point", "shape": "diamond", "size": 100, "filled": true},
+      "encoding": {
+        "x": {
+          "field": "pp_female_parliaments",
+          "type": "quantitative",
+          "title": null
+        },
+        "color": {
+          "datum": "Parliament positions",
+          "scale": {
+            "domain": ["Managerial positions", "Parliament positions"],
+            "range": ["#47a7b2", "#e63946"]
+          }
+        },
+        "tooltip": [
+          {"field": "country", "type": "nominal", "title": "Country"},
+          {"field": "pp_female_parliaments", "type": "quantitative", "title": "Female Parliament (%)", "format": ".1%"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "grey",
+        "strokeWidth": 1.2,
+        "strokeDash": [3, 4]
+      },
+      "encoding": {
+        "x": {"value": 250},
+        "y": {"value": 0},
+        "y2": {"value": 450}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "text": "No Gender Gap",
+        "angle": 270,
+        "align": "left",
+        "dx": -450,
+        "dy": -10,
+        "color": "grey",
+        "fontSize": 10,
+        "fontWeight": "lighter"
+      },
+      "encoding": {
+        "x": {"value": 250},
+        "y": {"value": -10}
+      }
+    }
+  ]
+}
