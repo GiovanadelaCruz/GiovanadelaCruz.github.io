@@ -1,0 +1,110 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "height": 350,
+    "width": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/project/data/data_chart2.csv",
+      "format": {"type": "csv"}
+    },
+    "title": {
+      "text": "GDP vs Educated Female Labor Force Participation",
+      "fontSize": 14,
+      "subtitle": ["Sources: World Bank, International Labour Organization", ""],
+      "subtitleFontStyle": "italic",
+      "subtitleFontSize": 10,
+      "anchor": "start",
+      "color": "black"
+    },
+    "mark": {"type": "circle", "color": "seagreen"},
+    "params": [
+      {
+        "name": "hover", 
+        "select": {
+          "type": "point", 
+          "on": "pointerover"
+          }
+        },
+      {
+        "name": "yearSelector",
+        "value": 2023,
+        "bind": {
+          "input": "range",
+          "min": 2000,
+          "max": 2023,
+          "step": 1,
+          "name": "Select year:"
+        }
+      }    
+    ],
+    "encoding": {
+      "x": {
+        "field": "gap_abs",
+        "type": "quantitative",
+        "title": "Female labor force participation",
+        "axis": {
+          "titleAlign": "right",
+          "titleAnchor": "end",
+          "titleFontSize": 12.5,
+          "titleFontStyle": "italic",
+          "titleFontWeight": "normal",
+          "labelExpr": "(datum.value)+'pp.'",
+          "tickCount": 5
+        }
+      },
+      "y": {
+        "field": "gdp_pc_2010",
+        "type": "quantitative",
+        "title": ["GDP per capita", "(constant 2010)"],
+        "axis": {
+          "titleAngle": 0,
+          "titleAlign": "left",
+          "titleX": 5,
+          "titleY": 15,
+          "titleFontSize": 12.5,
+          "titleFontStyle": "italic",
+          "titleFontWeight": "normal",
+          "labelExpr": "(datum.value)+'$'",
+          "tickCount": 8
+        }
+      },
+      "size": {
+        "condition": {"param": "hover", "value": 350, "empty": false},
+        "value": 150
+      },
+      "opacity": {
+        "condition": {"param": "hover", "value": 1, "empty": false},
+        "value": 0.5
+      },
+      "order": {
+        "condition": {"param": "hover", "value": 1, "empty": false},
+        "value": 0
+      },
+      "tooltip": [
+        {"field": "name", "title": "Country"},
+        {
+          "field": "gap_abs",
+          "title": "Gender gap in labor force participation (pp.)",
+          "format": ".2f"
+        },
+        {
+          "field": "gdp_pc_2010",
+          "title": "GDP per capita (constant 2010, $)",
+          "format": ".2f"
+        }
+      ]
+    },
+    "transform": [
+      {"filter": "datum.year == yearSelector"},
+      {"filter": "datum.name != 0"},
+      {"filter": "datum.gap_abs <= 25"}
+    ],  
+    "config": {
+      "axis": {
+        "grid": true,
+        "gridColor": "#cccccc",
+        "gridDash": [2, 4],
+        "gridWidth": 0.5
+      }
+    },
+    "view": {"stroke": null}
+  }
