@@ -47,15 +47,14 @@
           "labelExpr": "datum.value == 0 ? 'No Gap' : (datum.value > 0 ? 'Women > Men (+pp)' : (datum.value < 0 ? '(-pp) Men > women' : 'Women > Men'))",
           "tickCount": 2,
           "orient": "bottom",
-          "labelAlign": "right",
-          "labelFontSize": 9,
-          "labelFontWeight": "lighter",
-          "labelBaseline": "middle"
+          "labelAlign": "center",
+          "labelFontSize": 10,
+          "labelFontWeight": "lighter"
           },
         "scale": {
           "type": "linear",
-          "scheme": "redyellowgreen",
-          "domain": [-55, -20, -10, -1, 0, 5, 10, 20]
+          "scheme": "purpleorange",
+          "domain": [-55, -20, -10, -1, 0, 5, 10, 20, 50]
         },      
         "condition": {
           "test": "datum['name'] == null",
