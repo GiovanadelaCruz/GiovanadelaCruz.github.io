@@ -136,6 +136,13 @@ nav .fa{
   margin-bottom: 1%;
   margin-top:1%;
 }
+.sections .card-content figure{
+  width: 100%; 
+  height: auto; 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .sections .grid{
   margin-top: 0%;
   display: flex;
@@ -230,7 +237,7 @@ img {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
   body {
     font-size: 12px;
   }
@@ -266,7 +273,25 @@ img {
     display: flex; 
     flex-direction: column;
     text-align: center;
-  }  
+  }
+  .overview-section .card-content{
+    width: 100%;
+  }
+
+  .sections .card-content{
+    width: 100%;
+    margin: 8px, 0;
+    max-width: 100%;
+  }
+
+  .sections .grid{
+    flex-direction: column;
+  }
+  .card-content figure{
+    width: 100%; 
+    height: auto;
+  }
+
 }
 
 html {
