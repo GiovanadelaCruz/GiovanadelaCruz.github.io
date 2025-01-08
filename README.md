@@ -1,3 +1,5 @@
+# Website: giovanadelacruz.github.io
+
 This site is part of the PP434 Automated Data Visualization Course, 2024 (LSE).
 
 It contains two main sections: Portfolio and Project.
