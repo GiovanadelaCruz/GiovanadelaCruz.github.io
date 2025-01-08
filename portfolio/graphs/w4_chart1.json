@@ -16,7 +16,7 @@
     "config": {"view": {"stroke": null}},
     "background": "#cddee6",
     "data": {
-      "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/main/w4_charts.csv",
+      "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/portfolio/data/w4_charts.csv",
       "format": {
         "type": "csv",
         "parse": {
