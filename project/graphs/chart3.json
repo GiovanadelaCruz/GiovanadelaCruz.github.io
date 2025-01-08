@@ -4,9 +4,9 @@
   "width": 250,
   "height": 450,
   "title": {
-    "text": "Women in senior leadership positions, OECD countries",
+    "text": "Women in Senior Leadership Positions, OECD Countries",
     "subtitle": [
-      "Participation of women in national parliaments & managerial positions",
+      "Participation of women in national parliaments & managerial positions (%)",
       "Source: United Nations, 2021",
       ""
     ],
@@ -52,7 +52,7 @@
           "datum": "Managerial positions",
           "scale": {
             "domain": ["Managerial positions", "Parliament positions"],
-            "range": ["#47a7b2", "#e63946"]
+            "range": ["#9B59B6", "#FF8C00"]
           },
           "legend": {
             "title": null,
@@ -69,7 +69,12 @@
       }
     },
     {
-      "mark": {"type": "point", "shape": "diamond", "size": 100, "filled": true},
+      "mark": {
+        "type": "point",
+        "shape": "diamond",
+        "size": 100,
+        "filled": true
+      },
       "encoding": {
         "x": {
           "field": "pp_female_parliaments",
@@ -80,7 +85,7 @@
           "datum": "Parliament positions",
           "scale": {
             "domain": ["Managerial positions", "Parliament positions"],
-            "range": ["#47a7b2", "#e63946"]
+            "range": ["#9B59B6", "#FF8C00"]
           }
         },
         "tooltip": [
@@ -117,6 +122,25 @@
       "encoding": {
         "x": {"value": 250},
         "y": {"value": -10}
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#FF8C00",
+        "opacity": 0.5,
+        "strokeWidth": 1.5,  
+        "size": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "pp_female_parliaments",
+          "type": "quantitative"
+        },
+        "x2": {
+          "value": 0
+        },
+        "y": {"field": "country", "type": "nominal"}
       }
     }
   ]

@@ -3,10 +3,10 @@
     "width": 700,
     "height": 380,
     "title": {
-      "text": "Enterprises with women as CEO",
+      "text": "Enterprises with Women as CEO",
       "subtitle": [
-        "Share of enterprises with women as CEO by company's size",
-        "Source: Enterprise Surveys, World Bank (latest available)",
+        "Share of enterprises with women as CEO by company size",
+        "Source: Enterprise Surveys, World Bank (latest year available)",
         ""
       ],
       "fontSize": 14,
@@ -21,7 +21,7 @@
         "value": "All",
         "bind": {
           "input": "select",
-          "name": "Company's size:",
+          "name": "Company size:",
           "options": [
             "All",
             "Large (100+)",
@@ -77,7 +77,7 @@
             "field": "value",
             "type": "quantitative",
             "legend": {
-              "title": "", 
+              "title": "",
               "format": ".0%",
               "orient": "bottom",
               "labelAlign": "center",

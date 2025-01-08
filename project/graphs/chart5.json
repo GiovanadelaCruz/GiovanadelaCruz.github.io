@@ -10,8 +10,8 @@
   "text": "Gender Wage Gap on Managers",
   "fontSize": 14,
   "subtitle": [
-    "Montly (PPP) wage difference as a percentage of male wage",
-    "Source: World Bank, International Labour Organization, 2022",
+    "Montly wage (PPP) difference as a percentage of male wage",
+    "Sources: World Bank, International Labour Organization, 2022",
     ""
   ],
   "subtitleFontStyle": "italic",
@@ -139,7 +139,7 @@
           "condition": [
             {
               "test": "datum.gap_pp < -0.05",
-              "value": "rgb(69,141,198)"
+              "value": "#FFCC80"
             },
             {
               "test": "datum.gap_pp > -0.05 && datum.gap_pp <= 0.05",
@@ -147,7 +147,7 @@
             },
             {
               "test": "datum.gap_pp > 0.05",
-              "value": "rgb(230,142,72)"
+              "value": "#B39DDB"
             }
           ],
           "field": "gap_pp",

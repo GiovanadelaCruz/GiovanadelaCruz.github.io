@@ -5,8 +5,8 @@
     "title": {
       "text": "Labor Force Participation Gender Gap",
       "subtitle": [
-        "Difference in labor participation (ages 18-64 with advanced education)",
-        "Source: International Labour Organization (lattest available)",
+        "Difference in labor participation rates (ages 18-64 with advanced education)",
+        "Source: International Labour Organization (latest year available)",
         ""
       ],
       "fontSize": 14,
@@ -44,10 +44,10 @@
         "legend": {
           "title": "", 
           "format": ".02",
-          "labelExpr": "datum.value == 0 ? 'No Gap' : (datum.value > 0 ? 'Women > Men (+pp)' : (datum.value < 0 ? '(-pp) Men > women' : 'Women > Men'))",
+          "labelExpr": "datum.value == 0 ? '' : (datum.value > 0 ? 'Women ⬆ (+pp)' : (datum.value < 0 ? '(-pp) Men ⬆' : ''))",
           "tickCount": 2,
           "orient": "bottom",
-          "labelAlign": "center",
+          "labelAlign": "right",
           "labelFontSize": 10,
           "labelFontWeight": "lighter"
           },
@@ -64,7 +64,7 @@
       "tooltip": [
         {"field": "name", "title": "Country"},
         {"field": "year", "title": "Year"},
-        {"field": "value", "title": "Value", "format": ".02"}
+        {"field": "value", "title": "Value (pp.)", "format": ".02"}
       ]
     }
   }

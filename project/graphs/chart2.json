@@ -7,7 +7,7 @@
       "format": {"type": "csv"}
     },
     "title": {
-      "text": "GDP vs Educated Female Labor Force Participation",
+      "text": "GDP per capita vs. Educated Female Labor Force Participation",
       "fontSize": 14,
       "subtitle": ["Sources: World Bank, International Labour Organization", ""],
       "subtitleFontStyle": "italic",
@@ -15,7 +15,7 @@
       "anchor": "start",
       "color": "black"
     },
-    "mark": {"type": "circle", "color": "seagreen"},
+    "mark": {"type": "circle", "color": "#FFA500"},
     "params": [
       {
         "name": "hover", 
@@ -32,7 +32,7 @@
           "min": 2000,
           "max": 2023,
           "step": 1,
-          "name": "Select year:"
+          "name": "Year:"
         }
       }    
     ],
@@ -44,7 +44,7 @@
         "axis": {
           "titleAlign": "right",
           "titleAnchor": "end",
-          "titleFontSize": 12.5,
+          "titleFontSize": 12,
           "titleFontStyle": "italic",
           "titleFontWeight": "normal",
           "labelExpr": "(datum.value)+'pp.'",
@@ -60,7 +60,7 @@
           "titleAlign": "left",
           "titleX": 5,
           "titleY": 15,
-          "titleFontSize": 12.5,
+          "titleFontSize": 12,
           "titleFontStyle": "italic",
           "titleFontWeight": "normal",
           "labelExpr": "(datum.value)+'$'",
@@ -89,7 +89,7 @@
         {
           "field": "gdp_pc_2010",
           "title": "GDP per capita (constant 2010, $)",
-          "format": ".2f"
+          "format": ",.0f"
         }
       ]
     },

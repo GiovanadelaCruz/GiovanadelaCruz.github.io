@@ -1,122 +1,148 @@
 {
-    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "width": 600,
-    "height": 400,
-    "data": {
-      "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/project/data/data_chart6.csv"
-    },
-    "title": {
-      "text": "Gender Parity Index, School Enrollment - Tertiary (gross), 1980 - 2023",
-      "fontSize": 14,
-      "subtitle": [
-        "Source: World Bank",
-        ""
-      ],
-      "subtitleFontStyle": "italic",
-      "subtitleFontSize": 10,
-      "anchor": "start",
-      "color": "black"
-    },
-    "layer": [
-      {
-        "mark": {
-          "type": "area",
-          "opacity": 0.1,
-          "fill": "orange"
-        },
-        "encoding": {
-          "x": {
-            "field": "year",
-            "type": "temporal"
-          },
-          "y": {
-            "value": 115
-          },
-          "y2": {
-            "value": 1
-          }
-        }
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/project/data/data_chart6.csv"
+  },
+  "title": {
+    "text": "Gender Parity Index, School Enrollment - Tertiary (gross), 1980 - 2023",
+    "fontSize": 14,
+    "subtitle": [
+      "Source: World Bank",
+      ""
+    ],
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "opacity": 0.1,
+        "fill": "orange"
       },
-      {
-        "mark": {
-          "type": "line",
-          "strokeWidth": 2
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "temporal"
         },
-        "encoding": {
-          "x": {
-            "field": "year",
-            "type": "temporal",
-            "title": "",
-            "axis": {
-              "format": "%Y",
-              "grid": false,
-              "ticks": false,
-              "labelFontSize": 10,
-              "labelPadding": 3,
-              "offset": -285,
-              "labelColor": "grey",
-              "values": ["1980-01-01","1993-01-01", "2005-01-01","2008-01-01","2019-01-01","2023-01-01"]
-            }
-          },
-          "y": {
-            "field": "parity_index_ter",
-            "type": "quantitative",
-            "title": ["More women were enrolled", "⬆"],
-            "scale": {
-              "domain": [0, 1.4]
-            },
-            "axis": {
-              "grid": true,
-              "gridColor": "grey",
-              "gridDash": [2, 3],
-              "gridOpacity": 0.3,
-              "titleFontSize": 12,
-              "titleFontWeight": "lighter",
-              "titleAngle": 0,
-              "titleAlign": "left",
-              "titleX": 5,
-              "titleY": 50,
-              "tickCount": 6
-            }
-          },
-          "color": {
-            "field": "name",
-            "type": "nominal",
-            "scale": {
-              "domain": ["North America", "Europe & Central Asia", "East Asia & Pacific", "Latin America & Caribbean", "Middle East & North Africa", "Sub-Saharan Africa", "South Asia"],
-              "range": ["#6a3d9a", "#a56cc1", "#fdb863", "#e66101", "#b35806", "#874c92", "#d6604d"]
-            },
-            "title": "",
-            "legend": {
-              "orient": "top",
-              "direction": "horizontal",
-              "offset": 15,
-              "labelFontSize": 11,
-              "columns": 4,
-              "labelOffset": 5,
-              "labelFontWeight": "lighter"
-            }
-          },
-          "tooltip": [
-            {"field": "year", "type": "temporal", "title": "Year", "format": "%Y"},
-            {"field": "parity_index_ter", "type": "quantitative", "title": "Gender parity index", "format": ".3"}
-          ]
-        }
-      },
-      {
-        "mark": {
-          "type": "rule",
-          "stroke": "black",
-          "strokeWidth": 3,
-          "opacity": 1
+        "y": {
+          "value": 115
         },
-        "encoding": {
-          "y": {
-            "datum": 1,
-            "type": "quantitative"
-          }
+        "y2": {
+          "value": 1
         }
       }
-    ],
-    "view": {"stroke": null, "fill": null}
-  }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2,
+        "interpolate": "monotone"
+      },
+      "params": [
+        {
+        "name": "hover",
+        "select": {
+          "type": "point",
+          "fields": ["name"],
+          "on": "pointerover"
+          }
+        },
+        {
+          "name": "leg_region",
+          "select": {
+            "type": "point",
+            "fields": ["name"]
+          },
+          "bind": "legend"
+        }
+      ],        
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "temporal",
+          "title": "",
+          "axis": {
+            "format": "%Y",
+            "grid": false,
+            "ticks": false,
+            "labelFontSize": 10,
+            "labelPadding": 3,
+            "offset": -285,
+            "labelColor": "grey",
+            "values": ["1980-01-01","1993-01-01", "2005-01-01","2008-01-01","2019-01-01","2023-01-01"]
+          }
+        },
+        "y": {
+          "field": "parity_index_ter",
+          "type": "quantitative",
+          "title": ["More women were enrolled", "⬆"],
+          "scale": {
+            "domain": [0, 1.4]
+          },
+          "axis": {
+            "grid": true,
+            "gridColor": "grey",
+            "gridDash": [2, 3],
+            "gridOpacity": 0.3,
+            "titleFontSize": 12,
+            "titleFontWeight": "lighter",
+            "titleAngle": 0,
+            "titleAlign": "left",
+            "titleX": 5,
+            "titleY": 50,
+            "tickCount": 6
+          }
+        },
+        "color": {
+          "field": "name",
+          "type": "nominal",
+          "scale": {
+            "domain": ["North America", "Europe & Central Asia", "East Asia & Pacific", "Latin America & Caribbean", "Middle East & North Africa", "Sub-Saharan Africa", "South Asia"],
+            "range": ["#6a3d9a", "#a56cc1", "#fdb863", "#e66101", "#b35806", "#874c92", "#d6604d"]
+          },
+          "title": "",
+          "legend": {
+            "orient": "top",
+            "direction": "horizontal",
+            "offset": 15,
+            "labelFontSize": 11,
+            "columns": 4,
+            "labelOffset": 5,
+            "labelFontWeight": "lighter"
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "leg_region",
+            "value": 1
+          },
+          "value": 0.15
+        },          
+        "tooltip": [
+          {"field": "year", "type": "temporal", "title": "Year", "format": "%Y"},
+          {"field": "parity_index_ter", "type": "quantitative", "title": "Gender parity index", "format": ".3"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "stroke": "black",
+        "strokeWidth": 3,
+        "opacity": 1
+      },
+      "encoding": {
+        "y": {
+          "datum": 1,
+          "type": "quantitative"
+        }
+      }
+    }
+  ],
+  "view": {"stroke": null, "fill": null}
+}

@@ -4,15 +4,15 @@
 .main-navigation-0 {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(#918443b3,#918443b3), url(lse_background.jpg);
+    background-image: linear-gradient(#a88fb6b3,#a88fb6b3), url(lse_background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
 }
 .main-navigation-1 {
-  min-height: 40vh; 
+  min-height: 70vh; 
   width: 100%;
-  background-image: linear-gradient(#918443b3,#918443b3), url(lse_background.jpg);
+  background-image: linear-gradient(#a88fb6b3,#a88fb6b3), url(lse_background.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -118,7 +118,7 @@ nav .fa{
 .overview-section .card-content{
   margin: auto;
   width: 650px;
-  background: #9ab973;
+  background: #e9c28db3;
   border-radius: 35px;
   margin-bottom: 50px;
   margin-top: 50px;
@@ -148,9 +148,13 @@ nav .fa{
   text-align: center;
   padding-top: 30px;
   padding-bottom: 40px;
+  padding-left: 150px;
+  padding-right: 150px;  
 }
 .sections h1, .sections h3 {
   margin: 5px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 /* Body */
 body {
@@ -191,7 +195,8 @@ p{
   /*font-weight: 300;*/
   line-height: 20px;
   padding: 10px;
-
+  margin-left: 150px;
+  margin-right: 150px;  
 }
 
 hr {
