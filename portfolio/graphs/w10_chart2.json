@@ -1,0 +1,109 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 700,
+    "height": 380,
+    "title": {
+      "text": "Enterprises with Women as CEO",
+      "subtitle": [
+        "Share of enterprises with women as CEO by company size",
+        "Source: Enterprise Surveys, World Bank (latest year available)",
+        ""
+      ],
+      "fontSize": 14,
+      "subtitleFontSize": 10,
+      "subtitleFontWeight": "lighter",
+      "anchor": "middle",
+      "subtitleFontStyle": "italic"
+    },
+    "params": [
+      {
+        "name": "GroupSelect",
+        "value": "All",
+        "bind": {
+          "input": "select",
+          "name": "Company size:",
+          "options": [
+            "All",
+            "Large (100+)",
+            "Medium (20-99)",
+            "Small (5-19)"
+          ],
+          "labels": [
+            "All",
+            "Large",
+            "Medium",
+            "Small"
+          ]
+        }
+      }
+    ],
+    "layer": [
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/map_world.geojson",
+          "format": {"property": "features"}
+        },
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.3},
+        "encoding": {
+          "color": {"value": "lightgrey"}
+        }
+      },
+      {
+        "data": {
+          "url": "https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/project/data/data_chart4.csv"
+        },
+        "transform": [
+          {
+            "lookup": "country",
+            "from": {
+              "key": "properties.COUNTRY",
+              "fields": ["geometry", "properties", "type"],
+              "data": {
+                "url": "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/datasets/advanced/map_world.geojson",
+                "format": {"property": "features"}
+              }
+            }
+          },
+          {
+            "calculate": "datum.pp_female_ceo/100", "as": "value"
+          },
+          {
+            "filter": "datum.subgroup_level == GroupSelect"
+          }
+        ],
+        "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.3},
+        "encoding": {
+          "color": {
+            "field": "value",
+            "type": "quantitative",
+            "legend": {
+              "title": "",
+              "format": ".0%",
+              "orient": "bottom",
+              "labelAlign": "center",
+              "labelFontSize": 9,
+              "labelFontWeight": "lighter",
+              "labelBaseline": "middle"
+            },
+            "scale": {
+              "type": "linear",
+              "scheme": "purpleorange",
+              "domain": [0, 0.5],
+              "reverse": false,
+              "domainMid": 0
+            }
+          },
+          "tooltip": [
+            {"field": "country", "title": "Country"},
+            {"field": "year", "title": "Year"},
+            {"field": "value", "title": "Value", "format": ".01%"}
+          ]
+        }
+      }
+    ],
+    "projection": {
+      "type": "naturalEarth1",
+      "scale": 150,
+      "translate": [350, 210]
+    }
+  }

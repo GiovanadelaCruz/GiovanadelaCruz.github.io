@@ -48,7 +48,8 @@
             "titleFontStyle": "italic",
             "titleFontWeight": "normal",
             "titleFontSize": 13,
-            "labelFontSize": 14
+            "labelFontSize": 10.5,
+            "labelExpr": "(datum.value)+'%'"
           }
         },
         "y": {
@@ -65,14 +66,15 @@
             "titleFontStyle": "italic",
             "titleFontWeight": "normal",
             "titleFontSize": 13,
-            "labelFontSize": 14,
+            "labelFontSize": 10.5,
             "values": [0, 5, 10, 15, 20],
             "titleAngle": 0,
             "titleAlign": "left",
             "titleAnchor": "start",
             "titleBaseline": "top",
             "titleX": 0,
-            "titleY": -50
+            "titleY": -50,
+            "labelExpr": "(datum.value)+'%'"
           }
         },
         "color": {
