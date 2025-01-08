@@ -73,7 +73,7 @@ nav .fa{
     color: #fff;
 }
 .welcome-container p{
-    margin: 0px 0cap 30px;
+    margin: 0% 0cap 3%;
     font-size: 16px;
     color: #fff;
 }
@@ -97,8 +97,8 @@ nav .fa{
     cursor: pointer; 
 }
 .explore-link:hover{
-    border:0.5px solid #a7902a;
-    background: #a7902a;
+    border:0.5px solid #a88fb6;
+    background: #a88fb6;
     transition: 0.6s;
 }
 
@@ -118,14 +118,14 @@ nav .fa{
 .overview-section .card-content{
   margin: auto;
   width: 650px;
-  background: #e9c28db3;
+  background: #C8D2B9;
   border-radius: 35px;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  padding: 5px 0px 20px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  padding: 0.5% 0% 2%;
   /*box-sizing: border-box;*/
   transition: 0s;
-  box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.30)
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.30)
 }
 .overview-section .card-content h2{
   font-size: 23px;
@@ -134,8 +134,8 @@ nav .fa{
 /* Class: card-content */
 .sections .card-content{
   background: transparent;
-  margin-bottom: 10px;
-  margin-top:10px;
+  margin-bottom: 1%;
+  margin-top:1%;
 }
 .sections .grid{
   margin-top: 0%;
@@ -148,38 +148,54 @@ nav .fa{
   text-align: center;
   padding-top: 30px;
   padding-bottom: 40px;
-  padding-left: 150px;
-  padding-right: 150px;  
+  padding-left: 5%;
+  padding-right: 5%;  
 }
 .sections h1, .sections h3 {
-  margin: 5px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0.5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
+
+/* Class: button-link */
+.button-link {
+  background-color: transparent;
+  border: 1px solid #B39DDB;
+  font-weight: 500;
+  border-radius: 0%;
+  align-items: flex-start;
+  display: inline-block;
+  font-size: 13px;
+  text-decoration: none;
+  overflow: hidden;
+  padding: 1% 2%;
+  text-align: center;
+  transition: 0.2s
+}
+
+.button-link:hover{
+  border:0.5px solid #B39DDB;
+  background: #B39DDB;
+  transition: 0.6s;
+}
+
+
 /* Body */
 body {
   font-family: 'Open Sans', 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif; /*'Poppins', 'Helvetica Neue'*/
   font-size: 16px;
   color: #333;
   line-height: 1.2;
-  /*background-color: #fff;*/
   margin:0 auto;
   padding: 0;
   /*max-width: 800px;*/
   /*padding-top: 60px;*/
 }
 
-/* Headings and paragraph */
-/*h1, h2, h3, h4, h5, h6 {
-  color: #333;
-  margin-top: 24px;
-  margin-bottom: 16px;
-  font-weight: 600;
-}*/
 h1{
   color: #000;
-  margin-top: 24px;
-  margin-bottom: 16px;
+  margin-top: 2.4%;
+  margin-bottom: 1.6%;
   font-size: 35px;
   font-weight: bold /*font-weight: 600;*/
 }
@@ -187,16 +203,16 @@ h2{
   color: #000;
   text-align: center;
   font-weight: bold;
-  margin: 10px 0px;
+  margin: 1% 0px;
 }
 p{
   color: #000;
-  font-size: 14px;
+  font-size: 16px;
   /*font-weight: 300;*/
   line-height: 20px;
   padding: 10px;
-  margin-left: 150px;
-  margin-right: 150px;  
+  margin-left: 5%;
+  margin-right: 5%;  
 }
 
 hr {
@@ -204,7 +220,56 @@ hr {
   height: 0.5px; 
   background-color: #333;
   width: 90%;           
-  margin: 20px auto;
+  margin: 2% auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .menu-container ul li {
+    padding: 10px;
+  }
+
+  .welcome-container h1 {
+    font-size: 32px;
+  }
+
+  .sections {
+    padding-left: 10px; 
+    padding-right: 10px;
+  }
+
+  .explore-link {
+    font-size: 12px; 
+    padding: 8px 30px; 
+  }
+
+  nav .fa {
+    display: block;
+    font-size: 24px;
+  }
+
+  .menu-container.active ul {
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+  }  
 }
 
 html {
@@ -240,10 +305,5 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-  
-img {
-  max-width: 100%;
-  height: auto;
 }
 */

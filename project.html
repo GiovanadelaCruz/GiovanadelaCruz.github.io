@@ -80,7 +80,7 @@
 
     <!-- SECTION 1 -->    
     <section class="sections">                
-        <p style="margin-left: 250px; margin-right: 250px;">
+        <p style="margin-left: 25%; margin-right: 25%;">
             Among adults with advanced education, 
             labor force participation rates are expected to be equal for women and men. 
             However, a gender gap persists in most countries, including high-income economies. 
@@ -104,7 +104,7 @@
             <div class="card-content">
                 <h3 style="font-size: 18px">But why does it really matter?</h3>
                 <br>
-                <p style="margin-left: 50px; margin-right: 50px;">
+                <p style="margin-left: 5%; margin-right: 5%;">
                     When examining the relationship with GDP, a negative correlation emerges. 
                     Smaller participation gaps are associated with higher GDP per capita.
                 </p>
@@ -131,7 +131,7 @@
             <div class="card-content">
                 <h3 style="font-size: 18px">What is the level of women's participation in leadership positions?</h3>
                 <br>
-                <p style="margin-left: 50px; margin-right: 50px;">
+                <p style="margin-left: 5%; margin-right: 5%;">
                     In OECD countries, women hold less than 50% of executive roles 
                     (including managerial and parliamentary positions), 
                     even in high-income economies. 
@@ -146,10 +146,9 @@
     <!-- SECTION 4 -->
     <section class="sections">   
         <h3 style="font-size: 18px">What about women in CEO positions?</h3>
-        <p style="margin-left: 250px; margin-right: 250px;">
+        <p style="margin-left: 25%; margin-right: 25%;">
             A closer look at CEO roles shows that most enterprises are led by male CEOs. 
             In most countries, the proportion of enterprises with women as CEOs is less than 25%.
-            Only in Thailand, Myanmar, and the Philippines do more than 40% of enterprises have a woman as CEO.
             However, this disparity is less pronounced in small enterprises but more significant in large companies.
         </p>
         <div class="grid">
@@ -169,13 +168,11 @@
             <!-- Paragraph -->            
             <div class="card-content">
                 <h3 style="font-size: 18px">After women attain managerial positions, does the gender wage gap persist?</h3>
-                <p style="margin-left: 50px; margin-right: 50px;">
+                <p style="margin-left: 5%; margin-right: 5%;">
                     It is reasonable to expect men and women in the same leadership roles to receive similar salaries. 
-                    However, the gender wage gap—measured by the monthly wage difference 
-                    as a percentage of male earnings—reveals substantial disparities. 
+                    However, the gender wage gap reveals substantial disparities. 
                     In high-income countries like Austria, female managers earn around 36% 
-                    less than their male counterparts. 
-                    Only in a few countries do women’s salaries closely align with those of men.
+                    less than their male counterparts.
                 </p>
             </div>
 
@@ -190,7 +187,7 @@
     <!-- SECTION 6 -->
     <section class="sections">   
         <h3 style="font-size: 18px">Is the gender gap in executive positions caused by a lack of women with advanced education?</h3>
-        <p style="margin-left: 280px; margin-right: 280px;">
+        <p style="margin-left: 25%; margin-right: 25%;">
             When examining the potential causes of this disparity, 
             the data on gender parity in tertiary education enrollment tells a different story. 
             Surprisingly, the share of women in advanced education has exceeded that of men 
@@ -198,8 +195,7 @@
             <br>
             <br>
             For instance, the gender parity in tertiary education was achieved, on average, 
-            in Latin America and the Caribbean by 1993, and in Europe and Central Asia by 1980. 
-            This suggests that the lack of educated women is not necessarily the issue here.
+            in Europe and Central Asia by 1980.
         </p>
         <div class="grid">
 
@@ -211,29 +207,166 @@
         </div>        
     </section>
 
-
-    <hr>
-
-    <!-- WEEK 5 -->
-    <section class="sections">   
-        <p>DESCRIPTION...The data was analyzed using Python (
-            <a href="https://colab.research.google.com/drive/1Dhk1ZR0cRDcgmH3E9up2UXtceQ62qi6o?usp=sharing" target="_blank" rel="noopener noreferrer">
-            Script</a>
-        )</p>
+    <!-- SECTION 7: Final Conclusions -->
+    <section class="sections">
+        <h3 style="font-size: 18px">Final conclusions</h3>
+        <p>
+            Despite advances, a gender gap persists in leadership roles and wages. 
+            While women have surpassed men in tertiary education enrollment, 
+            societal and organizational barriers continue to limit their representation 
+            in executive positions and influence their earnings.
+        </p>
+    </section>
+    
+    <hr style="width: 60%; margin: 0px auto; height: 2px; background-color: #333;">
+    
+    <!-- SECTION 8: Technical Notes -->
+    <section class="sections">
+        <h3 style="font-size: 18px; color: #a3a2a2">Technical Notes</h3>
+        <br>
         <div class="grid">
             
-            <!-- Chart 1 -->            
             <div class="card-content">
-                <figure id="Portfolio_5_1"></figure>
+                <h3 style="font-size: 16px; color: #a3a2a2">Data</h3>
+                <p style="text-align: justify; color: #a3a2a2">
+                    The data was obtained from various sources: 
+                    the World Bank, the International Labor Organization (ILO), 
+                    the United Nations, and public datasets from GitHub accounts. 
+                    To ensure automation and replicability, 
+                    I used the World Bank's API (via the public package "wbgapi") and 
+                    the ILO's API. 
+                    For the United Nations data, due to the absence of an API, 
+                    I downloaded the necessary indicators in raw CSV format. 
+                    Similarly, for the World Bank's Enterprise Survey data, 
+                    I downloaded the aggregate indicators in raw format.
+                </p>
+                   
+                <p style="text-align: justify; color: #a3a2a2">
+                    The indicators used at the country level include, for example:
+                    <br>
+                    <br>
+                    > Labor force participation rate, ILO (id = EAP_DWAP_SEX_AGE_EDU_RT_A)
+                    <br>
+                    > Monthly Wage ($), ILO (id = EAR_4MTH_SEX_OCU_CUR_NB_A)
+                    <br>
+                    > GDP per capita ($), World Bank (id = NY.GDP.PCAP.KD)
+                    <br>
+                    > Parity index, tertiary education, World Bank (id = SE.ENR.TERT.FM.ZS)
+                    <br>
+                    > Women in CEO positions, Enterprise Surveys (downloaded manually)
+                    <br>
+                    > Women in executive positions, United Nations (downloaded manually)
+                    <br>
+                    <br>
+                    Additional data:                 
+                    <br>
+                    <br>
+                    > List of OECD countries, public data from a github account
+                    <br>
+                    > GeoJSON files for maps, public data from a github account
+                    <br>
+                    > Key country characteristics, World Bank
+                </p>    
+
+                <p style="text-align: justify; color: #a3a2a2">
+                    To see how this data was imported and the specific URLs, 
+                    refers to the Google Colab file (<a href=
+                        "https://colab.research.google.com/drive/1IuKLbqi-apZp6NEdxkzoiP0s-wjlQfg8?usp=sharing" 
+                        target="_blank" 
+                        rel="noopener noreferrer">here</a>),
+                    and for details on how the graphs were created, 
+                    visit the GitHub repository (<a href=
+                    "https://github.com/GiovanadelaCruz/GiovanadelaCruz.github.io/tree/main/project" 
+                    target="_blank" 
+                    rel="noopener noreferrer">here</a>).
+                </p>
             </div>
 
-        </div>        
+            <div class="card-content">
+                <h3 style="font-size: 16px; color: #a3a2a2">Challenges</h3>
+                <p style="text-align: justify; color: #a3a2a2">
+                    One of the main challenges was collecting data from various sources with different formats. 
+                    For instance, the data from the World Bank differed from that of the ILO. 
+                    Additionally, some key characteristics relevant to my analysis were not available directly via API. 
+                    To address this, I collected supplementary data, such as the list of OECD countries, 
+                    from a GitHub account and merged it with the main dataset. 
+                    Furthermore, some data were not accessible via API, so I downloaded CSV files, 
+                    which were raw (including titles or footnotes), and required cleaning. 
+                </p>   
+
+                <p style="text-align: justify; color: #a3a2a2">
+                    Even the data imported through the API were often aggregated, 
+                    requiring further cleaning and formatting before they could be used 
+                    in the Vega Lite Editor to create graphs in JSON format. 
+                    For example, some datasets included unnecessary categories (rows) or columns, 
+                    were in wide-format instead of long-format, 
+                    or required the calculation of additional indicators for analysis. 
+                    The Google Colab file demonstrates the data cleaning and analysis process.
+                </p>
+
+                <p style="text-align: justify; color: #a3a2a2">
+                    The final challenge involved creating complex, multi-layered, 
+                    interactive graphs in the Vega Lite Editor. 
+                    To overcome this, I recreated previous graphs and tested 
+                    each layer separately to diagnose and resolve the issues.
+                </p>
+                
+                <h3 style="font-size: 16px; color: #a3a2a2">Data and Code Access</h3>
+                <br>
+                <a class="button-link"
+                    href="https://colab.research.google.com/drive/1IuKLbqi-apZp6NEdxkzoiP0s-wjlQfg8?usp=sharing">Cleaning (Google Colab)
+                </a>
+                <br>
+                <a class="button-link"
+                    href="https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/project/data/data_chart1.csv">Graph 1: Data
+                </a>
+                <a class="button-link"
+                    href="https://github.com/GiovanadelaCruz/GiovanadelaCruz.github.io/blob/main/project/graphs/chart1.json">Graph 1: Code
+                </a>
+                <br>
+                <a class="button-link"
+                    href="https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/project/data/data_chart2.csv">Graph 2: Data
+                </a>
+                <a class="button-link"
+                    href="https://github.com/GiovanadelaCruz/GiovanadelaCruz.github.io/blob/main/project/graphs/chart2.json">Graph 2: Code
+                </a>
+                <br>
+                <a class="button-link"
+                    href="https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/project/data/data_chart3.csv">Graph 3: Data
+                </a>
+                <a class="button-link"
+                    href="https://github.com/GiovanadelaCruz/GiovanadelaCruz.github.io/blob/main/project/graphs/chart3.json">Graph 3: Code
+                </a>
+                <br>
+                <a class="button-link"
+                    href="https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/project/data/data_chart4.csv">Graph 4: Data
+                </a>
+                <a class="button-link"
+                    href="https://github.com/GiovanadelaCruz/GiovanadelaCruz.github.io/blob/main/project/graphs/chart4.json">Graph 4: Code
+                </a>
+                <br>
+                <a class="button-link"
+                    href="https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/project/data/data_chart5.csv">Graph 5: Data
+                </a>
+                <a class="button-link"
+                    href="https://github.com/GiovanadelaCruz/GiovanadelaCruz.github.io/blob/main/project/graphs/chart5.json">Graph 5: Code
+                </a>
+                <br>
+                <a class="button-link"
+                    href="https://raw.githubusercontent.com/GiovanadelaCruz/GiovanadelaCruz.github.io/refs/heads/main/project/data/data_chart6.csv">Graph 6: Data
+                </a>
+                <a class="button-link"
+                    href="https://github.com/GiovanadelaCruz/GiovanadelaCruz.github.io/blob/main/project/graphs/chart6.json">Graph 6: Code
+                </a>                                         
+                           
+            </div>
+            
+        </div>
     </section>
     
 
     <!-- A script to run JavaScript code on the page -->
     <script>
-        // Example: let figure_1_spec = "https://raw.githubusercontent.com/EconomicsObservatory/courses/main/2/s2_chart2.json"; // We're storing the URL of the graph we want to display in a variable
         
         vegaEmbed('#Project_1', "project/graphs/chart1.json")
         vegaEmbed('#Project_2', "project/graphs/chart2.json")
