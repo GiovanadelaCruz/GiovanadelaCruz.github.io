@@ -1,4 +1,4 @@
-# Website: giovanadelacruz.github.io
+# Website: [https://giovanadelacruz.github.io/][giovanadelacruz.github.io]
 
 This site is part of the PP434 Automated Data Visualization Course, 2024 (LSE).
 
